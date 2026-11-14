@@ -1,0 +1,16 @@
+{
+  "name": "teblade:rodai_mystery_thunder",
+  "properties": {
+    "attack_base": 7.5,
+    "max_damage": 500,
+    "slash_art": "teblade:thunder_art",
+    "special_effects": [
+      "teblade:mystery_rite",
+      "teblade:thunder"
+    ]
+  },
+  "render": {
+    "carry_type": "default",
+    "texture": "teblade:model/rodai/rodai_mystery_thunder.png"
+  }
+}

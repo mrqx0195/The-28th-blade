@@ -1,0 +1,46 @@
+{
+  "type": "teblade:blade_reversion",
+  "catalyst": {
+    "type": "slashblade:blade",
+    "items": [
+      "slashblade:slashblade"
+    ],
+    "request": {
+      "name": "teblade:rodai_mystery_flame"
+    }
+  },
+  "result": {
+    "components": {
+      "!minecraft:rarity": {},
+      "minecraft:max_damage": 500,
+      "slashblade:blade_state": {
+        "adjust": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "baseAttackModifier": 6.5,
+        "broken": false,
+        "carryType": "default",
+        "comboRoot": "slashblade:standby",
+        "defaultBewitched": false,
+        "defaultSwordTypes": [],
+        "effectColor": -13421569,
+        "effectColorInverse": false,
+        "killCount": 0,
+        "model": "slashblade:model/blade.obj",
+        "proudSoul": 0,
+        "refine": 0,
+        "sealed": false,
+        "slashArtsKey": "slashblade:drive_vertical",
+        "specialEffects": [
+          "teblade:mystery_rite"
+        ],
+        "texture": "teblade:model/rodai/rodai_mystery.png",
+        "translationKey": "item.teblade.rodai_mystery"
+      }
+    },
+    "count": 1,
+    "id": "slashblade:slashblade"
+  }
+}

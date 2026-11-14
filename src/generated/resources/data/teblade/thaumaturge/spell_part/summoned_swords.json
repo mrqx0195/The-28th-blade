@@ -1,0 +1,22 @@
+{
+  "aspect": "teblade:proud_soul",
+  "behavior": {
+    "type": "teblade:summoned_swords"
+  },
+  "color": 8375295,
+  "complexity": 5,
+  "icon": "thaumaturge:textures/foci/projectile.png",
+  "research": {
+    "entry": "teblade:spell_summoned_swords"
+  },
+  "settings": [
+    {
+      "complexity": 0.5,
+      "default": 2,
+      "key": "count",
+      "max": 6,
+      "min": 1,
+      "name": "spell.teblade.setting.count"
+    }
+  ]
+}

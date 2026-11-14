@@ -1,0 +1,16 @@
+{
+  "name": "teblade:rodai_mystery_sky",
+  "properties": {
+    "attack_base": 7.5,
+    "max_damage": 500,
+    "slash_art": "teblade:sky_art",
+    "special_effects": [
+      "teblade:mystery_rite",
+      "teblade:sky"
+    ]
+  },
+  "render": {
+    "carry_type": "default",
+    "texture": "teblade:model/rodai/rodai_mystery_sky.png"
+  }
+}

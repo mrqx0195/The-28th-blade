@@ -1,0 +1,43 @@
+{
+  "category": "teblade:bladecraft",
+  "column": 2,
+  "complexity": 2,
+  "icons": [
+    "thaumaturge:crystal_vitium"
+  ],
+  "name": "research.teblade.rodai_taint.title",
+  "note_aspects": [
+    {
+      "amount": 5,
+      "aspect": "teblade:akuryo"
+    },
+    {
+      "amount": 5,
+      "aspect": "thaumaturge:vitium"
+    }
+  ],
+  "parents": [
+    "teblade:blade_rodai",
+    "thaumaturge:bottle_taint"
+  ],
+  "row": 3,
+  "stages": [
+    {
+      "required_knowledge": [
+        {
+          "type": "theory",
+          "amount": 1,
+          "category": "teblade:bladecraft"
+        }
+      ],
+      "text": "research.teblade.rodai_taint.stage_0"
+    },
+    {
+      "recipes": [
+        "teblade:infusion/rodai_taint"
+      ],
+      "text": "research.teblade.rodai_taint.stage_1",
+      "warp": 1
+    }
+  ]
+}

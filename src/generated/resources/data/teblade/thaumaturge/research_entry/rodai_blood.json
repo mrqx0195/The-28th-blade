@@ -1,0 +1,43 @@
+{
+  "category": "teblade:bladecraft",
+  "column": 2,
+  "complexity": 2,
+  "icons": [
+    "thaumaturge:crimson_blade"
+  ],
+  "name": "research.teblade.rodai_blood.title",
+  "note_aspects": [
+    {
+      "amount": 5,
+      "aspect": "teblade:akuryo"
+    },
+    {
+      "amount": 5,
+      "aspect": "thaumaturge:victus"
+    }
+  ],
+  "parents": [
+    "teblade:blade_rodai",
+    "thaumaturge:crimson_rites"
+  ],
+  "row": 1,
+  "stages": [
+    {
+      "required_knowledge": [
+        {
+          "type": "theory",
+          "amount": 1,
+          "category": "teblade:bladecraft"
+        }
+      ],
+      "text": "research.teblade.rodai_blood.stage_0"
+    },
+    {
+      "recipes": [
+        "teblade:infusion/rodai_blood"
+      ],
+      "text": "research.teblade.rodai_blood.stage_1",
+      "warp": 1
+    }
+  ]
+}

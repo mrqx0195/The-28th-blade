@@ -1,0 +1,56 @@
+{
+  "type": "thaumaturge:arcane_workbench_shaped",
+  "crystals": [],
+  "key": {
+    "B": {
+      "item": "slashblade:slashblade_wood"
+    },
+    "P": {
+      "item": "slashblade:proudsoul_tiny"
+    },
+    "W": {
+      "tag": "thaumaturge:greatwood_logs"
+    }
+  },
+  "pattern": [
+    " WP",
+    "WBW",
+    "PW "
+  ],
+  "research": {
+    "entry": "teblade:unlock_bladecraft"
+  },
+  "result": {
+    "components": {
+      "!minecraft:rarity": {},
+      "minecraft:max_damage": 59,
+      "slashblade:blade_state": {
+        "adjust": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "baseAttackModifier": 4.0,
+        "broken": false,
+        "carryType": "default",
+        "comboRoot": "slashblade:standby",
+        "defaultBewitched": false,
+        "defaultSwordTypes": [],
+        "effectColor": -13421569,
+        "effectColorInverse": false,
+        "killCount": 0,
+        "model": "slashblade:model/blade.obj",
+        "proudSoul": 0,
+        "refine": 0,
+        "sealed": false,
+        "slashArtsKey": "slashblade:judgement_cut",
+        "specialEffects": [],
+        "texture": "teblade:model/greatwood_dummy.png",
+        "translationKey": "item.teblade.greatwood_dummy"
+      }
+    },
+    "count": 1,
+    "id": "slashblade:slashblade"
+  },
+  "vis": 10
+}

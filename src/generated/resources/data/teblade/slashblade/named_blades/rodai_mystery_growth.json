@@ -1,0 +1,16 @@
+{
+  "name": "teblade:rodai_mystery_growth",
+  "properties": {
+    "attack_base": 6.5,
+    "max_damage": 500,
+    "slash_art": "teblade:growth_art",
+    "special_effects": [
+      "teblade:mystery_rite",
+      "teblade:growth"
+    ]
+  },
+  "render": {
+    "carry_type": "default",
+    "texture": "teblade:model/rodai/rodai_mystery_growth.png"
+  }
+}

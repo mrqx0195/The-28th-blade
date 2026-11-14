@@ -1,0 +1,11 @@
+{
+  "name": "teblade:greatwood_dummy",
+  "properties": {
+    "max_damage": 59,
+    "slash_art": "slashblade:piercing"
+  },
+  "render": {
+    "carry_type": "default",
+    "texture": "teblade:model/greatwood_dummy.png"
+  }
+}

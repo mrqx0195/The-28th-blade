@@ -1,0 +1,35 @@
+{
+  "enchantments": [
+    {
+      "id": "minecraft:frost_walker",
+      "lvl": 8
+    },
+    {
+      "id": "minecraft:efficiency",
+      "lvl": 2
+    },
+    {
+      "id": "minecraft:quick_charge",
+      "lvl": 2
+    }
+  ],
+  "name": "teblade:fox_looking_for_edge_of_groundedge",
+  "properties": {
+    "attack_base": 22.0,
+    "max_damage": 80,
+    "slash_art": "slashblade:sakura_end",
+    "special_effects": [
+      "teblade:fox_wish_snow_wish"
+    ],
+    "sword_type": [
+      "bewitched",
+      "teblade_anomaly"
+    ]
+  },
+  "render": {
+    "carry_type": "default",
+    "model": "teblade:model/named/fox/fox_looking_for_edge_of_groundedge.obj",
+    "summon_sword_color": -13944981,
+    "texture": "teblade:model/named/fox/fox_looking_for_edge_of_groundedge.png"
+  }
+}

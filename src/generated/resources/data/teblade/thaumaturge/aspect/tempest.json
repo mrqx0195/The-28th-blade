@@ -1,0 +1,9 @@
+{
+  "color": 729397,
+  "components": [
+    "thaumaturge:perditio",
+    "teblade:rain"
+  ],
+  "tag": "tempest",
+  "texture": "teblade:textures/aspects/tempest.png"
+}

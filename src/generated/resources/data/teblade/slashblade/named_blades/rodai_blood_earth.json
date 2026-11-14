@@ -1,0 +1,16 @@
+{
+  "name": "teblade:rodai_blood_earth",
+  "properties": {
+    "attack_base": 7.5,
+    "max_damage": 200,
+    "slash_art": "teblade:earth_art",
+    "special_effects": [
+      "teblade:bloodthirst",
+      "teblade:earth"
+    ]
+  },
+  "render": {
+    "carry_type": "default",
+    "texture": "teblade:model/rodai/rodai_blood_earth.png"
+  }
+}

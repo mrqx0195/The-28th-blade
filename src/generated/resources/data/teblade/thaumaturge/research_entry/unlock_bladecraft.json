@@ -1,0 +1,38 @@
+{
+  "category": "teblade:bladecraft",
+  "column": -2,
+  "icons": [
+    "slashblade:proudsoul_tiny"
+  ],
+  "meta": [
+    "round",
+    "hidden"
+  ],
+  "name": "research.teblade.unlock_bladecraft.title",
+  "note_aspects": [
+    {
+      "amount": 5,
+      "aspect": "teblade:proud_soul"
+    }
+  ],
+  "parents": [
+    "thaumaturge:elemental_tools",
+    "teblade:scanned/slashblade"
+  ],
+  "row": 0,
+  "stages": [
+    {
+      "required_knowledge": [
+        {
+          "type": "observation",
+          "amount": 1,
+          "category": "teblade:bladecraft"
+        }
+      ],
+      "text": "research.teblade.unlock_bladecraft.stage_0"
+    },
+    {
+      "text": "research.teblade.unlock_bladecraft.stage_1"
+    }
+  ]
+}

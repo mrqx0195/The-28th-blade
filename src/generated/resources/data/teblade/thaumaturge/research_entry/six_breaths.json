@@ -1,0 +1,42 @@
+{
+  "category": "teblade:bladecraft",
+  "column": 5,
+  "complexity": 2,
+  "icons": [
+    "thaumaturge:essentia_crystal"
+  ],
+  "meta": [
+    "hidden"
+  ],
+  "name": "research.teblade.six_breaths.title",
+  "note_aspects": [
+    {
+      "amount": 5,
+      "aspect": "teblade:slash_blade"
+    },
+    {
+      "amount": 10,
+      "aspect": "thaumaturge:praecantatio"
+    }
+  ],
+  "parents": [
+    "teblade:blade_rodai",
+    "thaumaturge:elemental_tools"
+  ],
+  "row": 0,
+  "stages": [
+    {
+      "required_knowledge": [
+        {
+          "type": "theory",
+          "amount": 1,
+          "category": "teblade:bladecraft"
+        }
+      ],
+      "text": "research.teblade.six_breaths.stage_0"
+    },
+    {
+      "text": "research.teblade.six_breaths.stage_1"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "type": "thaumaturge:crucible",
+  "aspects": [
+    {
+      "amount": 4,
+      "aspect": "teblade:proud_soul"
+    }
+  ],
+  "catalyst": {
+    "item": "slashblade:proudsoul_tiny"
+  },
+  "research": {
+    "entry": "teblade:unlock_bladecraft"
+  },
+  "result": {
+    "count": 1,
+    "id": "slashblade:proudsoul"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "category": "teblade:bladecraft",
+  "column": 8,
+  "icons": [
+    "thaumaturge:essentia_crystal"
+  ],
+  "name": "research.teblade.breath_thunder.title",
+  "note_aspects": [
+    {
+      "amount": 5,
+      "aspect": "thaumaturge:aer"
+    },
+    {
+      "amount": 5,
+      "aspect": "thaumaturge:motus"
+    }
+  ],
+  "parents": [
+    "teblade:six_breaths"
+  ],
+  "row": -3,
+  "stages": [
+    {
+      "obtain": [
+        {
+          "amount": 1,
+          "components": {
+            "thaumaturge:crystal_aspect": {
+              "aspect": "thaumaturge:aer"
+            }
+          },
+          "items": "thaumaturge:essentia_crystal"
+        }
+      ],
+      "required_knowledge": [
+        {
+          "type": "observation",
+          "amount": 1,
+          "category": "teblade:bladecraft"
+        }
+      ],
+      "text": "research.teblade.breath_thunder.stage_0"
+    },
+    {
+      "recipes": [
+        "teblade:infusion/rodai_mystery_thunder",
+        "teblade:infusion/rodai_void_thunder",
+        "teblade:infusion/rodai_blood_thunder",
+        "teblade:infusion/rodai_taint_thunder"
+      ],
+      "text": "research.teblade.breath_thunder.stage_1"
+    }
+  ]
+}

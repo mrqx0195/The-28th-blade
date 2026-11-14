@@ -1,0 +1,10 @@
+{
+  "name": "teblade:fragmented_slashblade",
+  "properties": {
+    "max_damage": 20
+  },
+  "render": {
+    "carry_type": "default",
+    "texture": "teblade:model/fragmented_slashblade.png"
+  }
+}

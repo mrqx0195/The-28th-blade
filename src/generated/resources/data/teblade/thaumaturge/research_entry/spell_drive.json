@@ -1,0 +1,34 @@
+{
+  "category": "teblade:bladecraft",
+  "column": -3,
+  "complexity": 2,
+  "icons": [
+    "slashblade:slashblade"
+  ],
+  "meta": [
+    "reverse"
+  ],
+  "name": "research.teblade.spell_drive.title",
+  "note_aspects": [
+    {
+      "amount": 5,
+      "aspect": "teblade:slash_blade"
+    }
+  ],
+  "parents": [
+    "teblade:unlock_bladecraft"
+  ],
+  "row": 2,
+  "stages": [
+    {
+      "required_knowledge": [
+        {
+          "type": "theory",
+          "amount": 1,
+          "category": "teblade:bladecraft"
+        }
+      ],
+      "text": "research.teblade.spell_drive.stage_0"
+    }
+  ]
+}

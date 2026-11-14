@@ -1,0 +1,25 @@
+{
+  "block": [
+    {
+      "type": "thaumaturge:wind_burst"
+    }
+  ],
+  "entity": [
+    {
+      "type": "thaumaturge:knockback",
+      "base": 0.6,
+      "lift": 0.35,
+      "per_power": 0.25
+    }
+  ],
+  "imbue": [
+    {
+      "type": "thaumaturge:mob_effect",
+      "effect": "minecraft:slow_falling",
+      "ticks": 100.0
+    }
+  ],
+  "research": {
+    "entry": "teblade:six_breaths"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "block": [
+    {
+      "type": "thaumaturge:freeze_water",
+      "max": 8.0,
+      "per_power": 1.5
+    }
+  ],
+  "entity": [
+    {
+      "type": "thaumaturge:mob_effect",
+      "amplifier": 1.0,
+      "effect": "minecraft:slowness",
+      "ticks": 80.0
+    },
+    {
+      "type": "thaumaturge:freeze",
+      "ticks": 40.0
+    }
+  ],
+  "imbue": [
+    {
+      "type": "thaumaturge:mob_effect",
+      "effect": "minecraft:resistance",
+      "ticks": 100.0
+    }
+  ],
+  "research": {
+    "entry": "teblade:six_breaths"
+  }
+}

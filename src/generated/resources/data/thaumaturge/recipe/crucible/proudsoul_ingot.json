@@ -1,0 +1,23 @@
+{
+  "type": "thaumaturge:crucible",
+  "aspects": [
+    {
+      "amount": 5,
+      "aspect": "teblade:proud_soul"
+    },
+    {
+      "amount": 15,
+      "aspect": "thaumaturge:metallum"
+    }
+  ],
+  "catalyst": {
+    "item": "slashblade:proudsoul"
+  },
+  "research": {
+    "entry": "teblade:unlock_bladecraft"
+  },
+  "result": {
+    "count": 1,
+    "id": "slashblade:proudsoul_ingot"
+  }
+}

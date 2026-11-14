@@ -1,0 +1,22 @@
+{
+  "aspect": "teblade:slash_blade",
+  "behavior": {
+    "type": "teblade:judgement_cut"
+  },
+  "color": 9067775,
+  "complexity": 7,
+  "icon": "thaumaturge:textures/foci/rift.png",
+  "research": {
+    "entry": "teblade:spell_judgement_cut"
+  },
+  "settings": [
+    {
+      "complexity": 1.5,
+      "default": 6,
+      "key": "hits",
+      "max": 8,
+      "min": 3,
+      "name": "spell.teblade.setting.hits"
+    }
+  ]
+}

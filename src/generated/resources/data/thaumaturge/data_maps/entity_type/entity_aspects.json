@@ -1,0 +1,110 @@
+{
+  "values": {
+    "sbr_core:advance_slash_effect": [
+      {
+        "amount": 5,
+        "aspect": "thaumaturge:aversio"
+      }
+    ],
+    "sbr_core:air_trick_summoned_sword": [
+      {
+        "amount": 5,
+        "aspect": "thaumaturge:spiritus"
+      },
+      {
+        "amount": 5,
+        "aspect": "teblade:proud_soul"
+      }
+    ],
+    "slashblade:abstract_summoned_sword": [
+      {
+        "amount": 5,
+        "aspect": "thaumaturge:spiritus"
+      },
+      {
+        "amount": 5,
+        "aspect": "teblade:proud_soul"
+      }
+    ],
+    "slashblade:blistering_swords": [
+      {
+        "amount": 5,
+        "aspect": "thaumaturge:spiritus"
+      },
+      {
+        "amount": 5,
+        "aspect": "teblade:proud_soul"
+      }
+    ],
+    "slashblade:drive": [
+      {
+        "amount": 10,
+        "aspect": "thaumaturge:aversio"
+      },
+      {
+        "amount": 5,
+        "aspect": "teblade:proud_soul"
+      }
+    ],
+    "slashblade:heavy_rain_swords": [
+      {
+        "amount": 5,
+        "aspect": "thaumaturge:spiritus"
+      },
+      {
+        "amount": 5,
+        "aspect": "teblade:proud_soul"
+      }
+    ],
+    "slashblade:judgement_cut": [
+      {
+        "amount": 10,
+        "aspect": "thaumaturge:volatus"
+      },
+      {
+        "amount": 10,
+        "aspect": "thaumaturge:perditio"
+      },
+      {
+        "amount": 5,
+        "aspect": "teblade:proud_soul"
+      }
+    ],
+    "slashblade:slash_effect": [
+      {
+        "amount": 5,
+        "aspect": "thaumaturge:aversio"
+      }
+    ],
+    "slashblade:spiral_swords": [
+      {
+        "amount": 5,
+        "aspect": "thaumaturge:spiritus"
+      },
+      {
+        "amount": 5,
+        "aspect": "teblade:proud_soul"
+      }
+    ],
+    "slashblade:storm_swords": [
+      {
+        "amount": 5,
+        "aspect": "thaumaturge:spiritus"
+      },
+      {
+        "amount": 5,
+        "aspect": "teblade:proud_soul"
+      }
+    ],
+    "truepower:blast_summoned_sword": [
+      {
+        "amount": 5,
+        "aspect": "thaumaturge:spiritus"
+      },
+      {
+        "amount": 5,
+        "aspect": "teblade:proud_soul"
+      }
+    ]
+  }
+}

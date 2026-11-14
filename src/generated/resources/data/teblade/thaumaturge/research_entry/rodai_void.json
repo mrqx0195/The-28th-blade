@@ -1,0 +1,42 @@
+{
+  "category": "teblade:bladecraft",
+  "column": 2,
+  "icons": [
+    "thaumaturge:void_sword"
+  ],
+  "name": "research.teblade.rodai_void.title",
+  "note_aspects": [
+    {
+      "amount": 5,
+      "aspect": "teblade:slash_blade"
+    },
+    {
+      "amount": 5,
+      "aspect": "thaumaturge:vacuos"
+    }
+  ],
+  "parents": [
+    "teblade:blade_rodai",
+    "thaumaturge:base_eldritch"
+  ],
+  "row": -1,
+  "stages": [
+    {
+      "required_knowledge": [
+        {
+          "type": "observation",
+          "amount": 1,
+          "category": "teblade:bladecraft"
+        }
+      ],
+      "text": "research.teblade.rodai_void.stage_0"
+    },
+    {
+      "recipes": [
+        "teblade:infusion/rodai_void"
+      ],
+      "text": "research.teblade.rodai_void.stage_1",
+      "warp": 1
+    }
+  ]
+}

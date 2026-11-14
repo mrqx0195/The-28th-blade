@@ -1,0 +1,13 @@
+{
+  "behavior": {
+    "cancelAction": {
+      "frame": -1,
+      "jumpOnly": false
+    }
+  },
+  "end_frame": 22,
+  "motionLoc": "teblade:vmd/dread_storm_diving_star.blade.vmd",
+  "name": "teblade.dread_storm_diving_star_loop",
+  "priority": 80,
+  "start_frame": 11
+}

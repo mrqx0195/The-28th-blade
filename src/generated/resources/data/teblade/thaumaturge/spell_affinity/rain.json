@@ -1,0 +1,27 @@
+{
+  "block": [
+    {
+      "type": "thaumaturge:extinguish"
+    }
+  ],
+  "entity": [
+    {
+      "type": "thaumaturge:extinguish"
+    },
+    {
+      "type": "thaumaturge:mob_effect",
+      "effect": "minecraft:slowness",
+      "ticks": 60.0
+    }
+  ],
+  "imbue": [
+    {
+      "type": "thaumaturge:mob_effect",
+      "effect": "minecraft:water_breathing",
+      "ticks": 100.0
+    }
+  ],
+  "research": {
+    "entry": "teblade:six_breaths"
+  }
+}

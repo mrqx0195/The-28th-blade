@@ -1,0 +1,20 @@
+{
+  "behavior": {
+    "cancelAction": {
+      "frame": -1,
+      "jumpOnly": false
+    },
+    "tickStun": [
+      {
+        "needPower": false,
+        "stunValue": 30,
+        "tick": 0
+      }
+    ]
+  },
+  "end_frame": 159,
+  "motionLoc": "teblade:vmd/dread_storm_upper_slash.blade.vmd",
+  "name": "teblade.dread_storm_upper_slash2",
+  "priority": 90,
+  "start_frame": 110
+}

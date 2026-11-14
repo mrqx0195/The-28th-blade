@@ -1,0 +1,70 @@
+{
+  "category": "teblade:bladecraft",
+  "column": 5,
+  "complexity": 2,
+  "icons": [
+    "thaumaturge:salis_mundus"
+  ],
+  "name": "research.teblade.blade_revert.title",
+  "note_aspects": [
+    {
+      "amount": 5,
+      "aspect": "thaumaturge:ordo"
+    },
+    {
+      "amount": 5,
+      "aspect": "thaumaturge:praecantatio"
+    }
+  ],
+  "parents": [
+    "teblade:six_breaths"
+  ],
+  "row": 4,
+  "stages": [
+    {
+      "obtain": [
+        {
+          "amount": 1,
+          "items": "thaumaturge:salis_mundus"
+        }
+      ],
+      "required_knowledge": [
+        {
+          "type": "theory",
+          "amount": 1,
+          "category": "teblade:bladecraft"
+        }
+      ],
+      "text": "research.teblade.blade_revert.stage_0"
+    },
+    {
+      "recipes": [
+        "teblade:infusion/revert_rodai_mystery_thunder",
+        "teblade:infusion/revert_rodai_mystery_sky",
+        "teblade:infusion/revert_rodai_mystery_tide",
+        "teblade:infusion/revert_rodai_mystery_growth",
+        "teblade:infusion/revert_rodai_mystery_flame",
+        "teblade:infusion/revert_rodai_mystery_earth",
+        "teblade:infusion/revert_rodai_void_thunder",
+        "teblade:infusion/revert_rodai_void_sky",
+        "teblade:infusion/revert_rodai_void_tide",
+        "teblade:infusion/revert_rodai_void_growth",
+        "teblade:infusion/revert_rodai_void_flame",
+        "teblade:infusion/revert_rodai_void_earth",
+        "teblade:infusion/revert_rodai_blood_thunder",
+        "teblade:infusion/revert_rodai_blood_sky",
+        "teblade:infusion/revert_rodai_blood_tide",
+        "teblade:infusion/revert_rodai_blood_growth",
+        "teblade:infusion/revert_rodai_blood_flame",
+        "teblade:infusion/revert_rodai_blood_earth",
+        "teblade:infusion/revert_rodai_taint_thunder",
+        "teblade:infusion/revert_rodai_taint_sky",
+        "teblade:infusion/revert_rodai_taint_tide",
+        "teblade:infusion/revert_rodai_taint_growth",
+        "teblade:infusion/revert_rodai_taint_flame",
+        "teblade:infusion/revert_rodai_taint_earth"
+      ],
+      "text": "research.teblade.blade_revert.stage_1"
+    }
+  ]
+}

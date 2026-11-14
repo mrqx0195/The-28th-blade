@@ -1,0 +1,20 @@
+{
+  "behavior": {
+    "cancelAction": {
+      "frame": -1,
+      "jumpOnly": false
+    },
+    "tickShouldLockOn": [
+      {
+        "end": 14,
+        "start": 4,
+        "value": false
+      }
+    ]
+  },
+  "end_frame": 231,
+  "motionLoc": "teblade:vmd/dread_storm_combo_b.blade.vmd",
+  "name": "teblade.dread_storm_combo_b4",
+  "priority": 100,
+  "start_frame": 210
+}

@@ -1,0 +1,71 @@
+{
+  "type": "slashblade:shaped_blade",
+  "blade": "teblade:fox_looking_for_edge_of_groundedge",
+  "category": "equipment",
+  "key": {
+    "A": {
+      "item": "minecraft:ice"
+    },
+    "B": {
+      "type": "slashblade:blade",
+      "items": [
+        "slashblade:slashblade"
+      ],
+      "request": {
+        "enchantments": [
+          {
+            "id": "minecraft:frost_walker",
+            "lvl": 2
+          }
+        ],
+        "name": "slashblade:fox_black",
+        "proud_soul": 6000,
+        "refine": 80
+      }
+    },
+    "C": {
+      "item": "minecraft:blue_ice"
+    },
+    "D": {
+      "item": "minecraft:packed_ice"
+    },
+    "E": {
+      "item": "minecraft:snowball"
+    },
+    "F": {
+      "item": "minecraft:snow_block"
+    },
+    "G": {
+      "item": "minecraft:snow"
+    },
+    "S": {
+      "item": "slashblade:proudsoul_trapezohedron"
+    },
+    "W": {
+      "type": "slashblade:blade",
+      "items": [
+        "slashblade:slashblade"
+      ],
+      "request": {
+        "enchantments": [
+          {
+            "id": "minecraft:frost_walker",
+            "lvl": 2
+          }
+        ],
+        "name": "slashblade:fox_white",
+        "proud_soul": 6000,
+        "refine": 50
+      }
+    }
+  },
+  "pattern": [
+    "ACD",
+    "BSW",
+    "EFG"
+  ],
+  "result": {
+    "count": 1,
+    "id": "slashblade:slashblade"
+  }
+}

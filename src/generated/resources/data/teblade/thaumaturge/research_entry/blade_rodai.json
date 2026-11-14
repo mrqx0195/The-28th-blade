@@ -1,0 +1,42 @@
+{
+  "category": "teblade:bladecraft",
+  "column": 0,
+  "icons": [
+    "thaumaturge:wand_rod_silverwood"
+  ],
+  "name": "research.teblade.blade_rodai.title",
+  "note_aspects": [
+    {
+      "amount": 5,
+      "aspect": "teblade:slash_blade"
+    },
+    {
+      "amount": 5,
+      "aspect": "thaumaturge:herba"
+    }
+  ],
+  "parents": [
+    "teblade:unlock_bladecraft",
+    "thaumaturge:rod_silverwood"
+  ],
+  "row": 0,
+  "stages": [
+    {
+      "required_knowledge": [
+        {
+          "type": "observation",
+          "amount": 1,
+          "category": "teblade:bladecraft"
+        }
+      ],
+      "text": "research.teblade.blade_rodai.stage_0"
+    },
+    {
+      "recipes": [
+        "teblade:arcane/greatwood_dummy",
+        "teblade:arcane/silverwood_saya"
+      ],
+      "text": "research.teblade.blade_rodai.stage_1"
+    }
+  ]
+}

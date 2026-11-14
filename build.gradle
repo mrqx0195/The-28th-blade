@@ -1,0 +1,301 @@
+plugins {
+    id 'java-library'
+    id 'maven-publish'
+    id 'net.neoforged.moddev' version '2.0.107'
+    id 'idea'
+}
+
+tasks.named('wrapper', Wrapper).configure {
+    distributionType = Wrapper.DistributionType.BIN
+}
+
+version = mod_version
+group = mod_group_id
+
+repositories.clear()
+repositories {
+    // Mirror Maven
+    maven {
+        url = "https://neoforged.forgecdn.net/releases"
+    }
+    maven {
+        url = "https://neoforged.forgecdn.net/mojang-meta"
+    }
+
+    maven {
+        url = "https://maven.minecraftforge.net/"
+    }
+    maven {
+        url = "https://libraries.minecraft.net/"
+    }
+
+    mavenLocal()
+
+    maven {
+        url = "https://cursemaven.com"
+        content {
+            includeGroup "curse.maven"
+        }
+    }
+    maven {
+        url = "https://api.modrinth.com/maven"
+        content {
+            includeGroup "maven.modrinth"
+        }
+    }
+    maven {
+        name = "ModMaven"
+        url = "https://modmaven.dev"
+    }
+
+    maven {
+        url = 'https://jitpack.io'
+    }
+
+    maven {
+        name = "KosmX's maven"
+        url = 'https://maven.kosmx.dev/'
+    }
+
+    maven {
+        url = "https://maven.latvian.dev/releases"
+        content {
+            includeGroup "dev.latvian.mods"
+            includeGroup "dev.latvian.apps"
+        }
+    }
+
+    maven {
+        url = "https://maven.shedaniel.me/"
+    }
+
+    maven {
+        url = "https://raw.github.com/0999312/MMMaven/main/repository"
+    }
+
+    flatDir {
+        dir 'libs'
+    }
+}
+
+base {
+    archivesName = "${mod_file_name}-${minecraft_version}"
+}
+
+java.toolchain.languageVersion = JavaLanguageVersion.of(21)
+
+sourceSets {
+    gameTest {
+        compileClasspath += sourceSets.main.output
+        runtimeClasspath += sourceSets.main.output
+    }
+}
+configurations {
+    gameTestImplementation.extendsFrom implementation
+    gameTestRuntimeOnly.extendsFrom runtimeOnly, localRuntime
+
+    gameTestRuntimeClasspath {
+        exclude group: 'maven.modrinth', module: 'moonlight'
+        exclude group: 'maven.modrinth', module: 'mmmmmmmmmmmm'
+    }
+}
+
+def prepareGameTestStructures = tasks.register('prepareGameTestStructures', Copy) {
+    from 'src/gameTest/structures'
+    into 'run/gametest/gameteststructures'
+}
+
+neoForge {
+    version = project.neo_version
+
+    parchment {
+        mappingsVersion = project.parchment_mappings_version
+        minecraftVersion = project.parchment_minecraft_version
+    }
+
+    runs {
+        client {
+            client()
+            gameDirectory = project.file('run/client')
+            systemProperty 'neoforge.enabledGameTestNamespaces', project.mod_id
+            if (project.hasProperty('mc_uuid')) {
+                programArguments.addAll '--uuid', project.getProperty('mc_uuid')
+            }
+            if (project.hasProperty('mc_username')) {
+                programArguments.addAll '--username', project.getProperty('mc_username')
+            }
+            if (project.hasProperty('mc_accessToken')) {
+                programArguments.addAll '--accessToken', project.getProperty('mc_accessToken')
+            }
+        }
+
+        server {
+            server()
+            gameDirectory = project.file('run/server')
+            programArgument '--nogui'
+            systemProperty 'neoforge.enabledGameTestNamespaces', project.mod_id
+        }
+
+        gameTestServer {
+            type = "gameTestServer"
+            sourceSet = sourceSets.gameTest
+            taskBefore prepareGameTestStructures
+            gameDirectory = project.file('run/gametest')
+            systemProperty 'neoforge.enabledGameTestNamespaces', project.mod_id
+        }
+
+        data {
+            data()
+            gameDirectory = project.file('run/data')
+            programArguments.addAll '--mod', project.mod_id, '--all', '--output', file('src/generated/resources/').getAbsolutePath(), '--existing', file('src/main/resources/').getAbsolutePath()
+        }
+
+        configureEach {
+            systemProperty 'forge.logging.markers', 'REGISTRIES'
+            systemProperty 'file.encoding', 'UTF-8'
+            systemProperty 'mixin.debug.export', 'true'
+            logLevel = org.slf4j.event.Level.DEBUG
+        }
+    }
+
+    mods {
+        "${mod_id}" {
+            sourceSet(sourceSets.main)
+        }
+    }
+}
+
+neoForge.addModdingDependenciesTo(sourceSets.gameTest)
+neoForge.mods.create('tebladeGameTest') {
+    sourceSet(sourceSets.main)
+    sourceSet(sourceSets.gameTest)
+}
+neoForge.runs.configureEach {
+    loadedMods = [neoForge.mods.getByName(name == 'gameTestServer' ? 'tebladeGameTest' : mod_id)]
+}
+
+sourceSets.main.resources { srcDir 'src/generated/resources' }
+
+configurations {
+    runtimeClasspath.extendsFrom localRuntime
+}
+
+dependencies {
+//    implementation "maven.modrinth:slashblade-resharped:${slash_blade_version}"
+//    compileOnly 'com.github.0999312:SlashBlade_Resharped:1.21.1-SNAPSHOT'
+//    implementation "mods.flammpfeil.slashblade:SlashBlade_Resharped:${slash_blade_version}"
+    implementation "blank:SlashBladeResharped:${slash_blade_version}"
+
+    implementation "blank:mrqxs_Slashblade_Core-${minecraft_version}:${mrqx_slash_blade_core_version}"
+//    implementation "maven.modrinth:true-power:${true_power_version}"
+    implementation "blank:True_POWER-${minecraft_version}:${true_power_version}"
+    implementation "maven.modrinth:more-slashblade-ex-enchantment-effects:B2WTE1tG"
+    implementation "dev.kosmx.player-anim:player-animation-lib-forge:${player_animation_version}"
+
+    compileOnly "mezz.jei:jei-${minecraft_version}-common-api:${jei_version}"
+    compileOnly "mezz.jei:jei-${minecraft_version}-neoforge-api:${jei_version}"
+    runtimeOnly "mezz.jei:jei-${minecraft_version}-neoforge:${jei_version}"
+
+    if (!project.hasProperty('excludeShoulderSurfing')) {
+        implementation "maven.modrinth:shoulder-surfing-reloaded:1.21.1-5.0.9+neoforge"
+    }
+
+    // Thaumaturge, forked and fix for jitpack
+    implementation 'com.github.mrqx0195:Thaumaturge:e898f3a4d0'
+    implementation "curse.maven:thaumaturge-tinker-1792741:9563092"
+
+    // Test
+    runtimeOnly "maven.modrinth:moonlight:UG29KBvQ"
+    runtimeOnly "maven.modrinth:mmmmmmmmmmmm:1.21-2.0.12-neoforge"
+    runtimeOnly "me.shedaniel.cloth:cloth-config-neoforge:15.0.140"
+    runtimeOnly "dev.architectury:architectury-neoforge:13.0.8"
+    runtimeOnly "maven.modrinth:itemzoomer:2.3.0-1.21.1-neoforge"
+//    runtimeOnly "blank:a_belated_gift:1.0.2-beta"
+
+    implementation "org.jetbrains:annotations:17.0.0"
+}
+
+var generateModMetadata = tasks.register("generateModMetadata", ProcessResources) {
+    var replaceProperties = [
+            minecraft_version                  : minecraft_version,
+            minecraft_version_range            : minecraft_version_range,
+            neo_version                        : neo_version,
+            loader_version_range               : loader_version_range,
+            mod_id                             : mod_id,
+            mod_name                           : mod_name,
+            mod_license                        : mod_license,
+            mod_version                        : mod_version,
+            mod_authors                        : mod_authors,
+            mod_description                    : mod_description,
+            slash_blade_version_range          : slash_blade_version_range,
+            mrqx_slash_blade_core_version_range: mrqx_slash_blade_core_version_range,
+            true_power_version_range           : true_power_version_range
+    ]
+    inputs.properties replaceProperties
+    expand replaceProperties
+    from "src/main/templates"
+    into "build/generated/sources/modMetadata"
+}
+sourceSets.main.resources.srcDir generateModMetadata
+neoForge.ideSyncTask generateModMetadata
+
+publishing {
+    publications {
+        register('mavenJava', MavenPublication) {
+            from components.java
+        }
+    }
+    repositories {
+        maven {
+            url = "file://${project.projectDir}/repo"
+        }
+    }
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+}
+
+idea {
+    module {
+        downloadSources = true
+        downloadJavadoc = true
+    }
+}
+
+java {
+    withSourcesJar()
+}
+
+// 独立 main 测试显式挂入 check，防止只编译而不执行断言。
+def bladeRuleTests = [
+        "BladeTransitionRulesTest", "BladeTransitionPropertyTest", "BladeTransitionExtremeTest",
+        "BladeHealingRulesTest", "BladeHealingPropertyTest", "BladeHealingBudgetTest",
+        "BladeElementRecipeCostsTest", "BladeEffectTransferRulesTest", "BladeMysteryRiteRulesTest",
+        "BladeInstallSignatureTest", "BladeTideStacksTest"
+]
+def bladeRuleTestPackages = [
+        BladeTransitionRulesTest    : "blade.transition",
+        BladeTransitionPropertyTest : "blade.transition",
+        BladeTransitionExtremeTest  : "blade.transition",
+        BladeEffectTransferRulesTest: "blade.transition",
+        BladeHealingRulesTest       : "specialeffect.bloodthirst",
+        BladeHealingPropertyTest    : "specialeffect.bloodthirst",
+        BladeHealingBudgetTest      : "specialeffect.bloodthirst",
+        BladeMysteryRiteRulesTest   : "specialeffect.mystery",
+        BladeElementRecipeCostsTest : "recipe"
+]
+def bladeRuleTasks = bladeRuleTests.collect { testClass ->
+    tasks.register("run${testClass}", JavaExec) {
+        dependsOn tasks.named("testClasses")
+        classpath = sourceSets.test.runtimeClasspath
+        def subpackage = bladeRuleTestPackages[testClass]
+        mainClass = "net.mrqx.slashblade.teblade.compat.thaumaturge.${subpackage ? subpackage + '.' : ''}${testClass}"
+        javaLauncher = javaToolchains.launcherFor {
+            languageVersion = JavaLanguageVersion.of(21)
+        }
+    }
+}
+tasks.named("check") {
+    dependsOn bladeRuleTasks
+}

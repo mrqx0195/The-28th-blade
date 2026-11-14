@@ -1,0 +1,19 @@
+{
+  "compatibilityLevel": "JAVA_21",
+  "minVersion": "0.8",
+  "mixins": [
+    "MixinAspectIndex",
+    "MixinBlandStandEventHandler",
+    "MixinBlockEntityInfusionMatrix",
+    "MixinComboState",
+    "MixinISlashBladeState",
+    "MixinInfusionEnchantmentEvents",
+    "MixinItemSlashBlade",
+    "MixinScannedEntity",
+    "MixinSlashArts"
+  ],
+  "package": "net.mrqx.slashblade.teblade.compat.thaumaturge.mixin",
+  "plugin": "net.mrqx.slashblade.teblade.compat.thaumaturge.ThaumaturgeMixinPlugin",
+  "refmap": "teblade.refmap.json",
+  "required": true
+}

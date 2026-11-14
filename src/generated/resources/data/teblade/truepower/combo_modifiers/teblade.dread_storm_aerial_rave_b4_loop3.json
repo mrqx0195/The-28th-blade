@@ -1,0 +1,25 @@
+{
+  "behavior": {
+    "cancelAction": {
+      "frame": -1,
+      "jumpOnly": false
+    },
+    "tickStun": [
+      {
+        "needPower": false,
+        "stunValue": 10,
+        "tick": 0
+      },
+      {
+        "needPower": false,
+        "stunValue": 10,
+        "tick": 1
+      }
+    ]
+  },
+  "end_frame": 5,
+  "motionLoc": "teblade:vmd/dread_storm_aerial_rave_b4_loop.blade.vmd",
+  "name": "teblade.dread_storm_aerial_rave_b4_loop3",
+  "priority": 80,
+  "start_frame": 0
+}

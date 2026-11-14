@@ -1,0 +1,31 @@
+{
+  "category": "teblade:bladecraft",
+  "column": -2,
+  "complexity": 3,
+  "icons": [
+    "thaumaturge:thaumium_sword"
+  ],
+  "name": "research.teblade.spell_summoned_swords.title",
+  "note_aspects": [
+    {
+      "amount": 5,
+      "aspect": "teblade:akuryo"
+    }
+  ],
+  "parents": [
+    "teblade:blade_rodai"
+  ],
+  "row": 3,
+  "stages": [
+    {
+      "required_knowledge": [
+        {
+          "type": "theory",
+          "amount": 1,
+          "category": "teblade:bladecraft"
+        }
+      ],
+      "text": "research.teblade.spell_summoned_swords.stage_0"
+    }
+  ]
+}

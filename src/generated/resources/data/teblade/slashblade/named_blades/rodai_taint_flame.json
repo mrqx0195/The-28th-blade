@@ -1,0 +1,16 @@
+{
+  "name": "teblade:rodai_taint_flame",
+  "properties": {
+    "attack_base": 5.0,
+    "max_damage": 59,
+    "slash_art": "teblade:flame_art",
+    "special_effects": [
+      "teblade:taint_mark",
+      "teblade:flame"
+    ]
+  },
+  "render": {
+    "carry_type": "default",
+    "texture": "teblade:model/rodai/rodai_taint_flame.png"
+  }
+}

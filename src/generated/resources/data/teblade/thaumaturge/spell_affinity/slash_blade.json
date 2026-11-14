@@ -1,0 +1,12 @@
+{
+  "entity": [
+    {
+      "type": "thaumaturge:damage",
+      "base": 2.0,
+      "damage_type": "minecraft:indirect_magic"
+    }
+  ],
+  "research": {
+    "entry": "teblade:unlock_bladecraft"
+  }
+}

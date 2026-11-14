@@ -1,0 +1,19 @@
+{
+  "behavior": {
+    "cancelAction": {
+      "frame": -1,
+      "jumpOnly": true
+    },
+    "step": [
+      {
+        "distance": 0.5,
+        "tick": 5
+      }
+    ]
+  },
+  "end_frame": 21,
+  "motionLoc": "teblade:vmd/dread_storm_combo_b.blade.vmd",
+  "name": "teblade.dread_storm_combo_b2",
+  "priority": 100,
+  "start_frame": 0
+}

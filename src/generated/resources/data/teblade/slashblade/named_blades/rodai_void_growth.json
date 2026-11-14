@@ -1,0 +1,16 @@
+{
+  "name": "teblade:rodai_void_growth",
+  "properties": {
+    "attack_base": 7.0,
+    "max_damage": 150,
+    "slash_art": "teblade:growth_art",
+    "special_effects": [
+      "teblade:void_step",
+      "teblade:growth"
+    ]
+  },
+  "render": {
+    "carry_type": "default",
+    "texture": "teblade:model/rodai/rodai_void_growth.png"
+  }
+}

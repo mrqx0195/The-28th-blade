@@ -1,0 +1,46 @@
+{
+  "type": "teblade:blade_reversion",
+  "catalyst": {
+    "type": "slashblade:blade",
+    "items": [
+      "slashblade:slashblade"
+    ],
+    "request": {
+      "name": "teblade:rodai_void_sky"
+    }
+  },
+  "result": {
+    "components": {
+      "!minecraft:rarity": {},
+      "minecraft:max_damage": 150,
+      "slashblade:blade_state": {
+        "adjust": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "baseAttackModifier": 7.0,
+        "broken": false,
+        "carryType": "default",
+        "comboRoot": "slashblade:standby",
+        "defaultBewitched": false,
+        "defaultSwordTypes": [],
+        "effectColor": -13421569,
+        "effectColorInverse": false,
+        "killCount": 0,
+        "model": "slashblade:model/blade.obj",
+        "proudSoul": 0,
+        "refine": 0,
+        "sealed": false,
+        "slashArtsKey": "slashblade:void_slash",
+        "specialEffects": [
+          "teblade:void_step"
+        ],
+        "texture": "teblade:model/rodai/rodai_void.png",
+        "translationKey": "item.teblade.rodai_void"
+      }
+    },
+    "count": 1,
+    "id": "slashblade:slashblade"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "color": 1515222,
+  "components": [
+    "thaumaturge:aer",
+    "thaumaturge:aqua"
+  ],
+  "tag": "rain",
+  "texture": "teblade:textures/aspects/rain.png"
+}

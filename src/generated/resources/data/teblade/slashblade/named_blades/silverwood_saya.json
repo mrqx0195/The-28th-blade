@@ -1,0 +1,11 @@
+{
+  "name": "teblade:silverwood_saya",
+  "properties": {
+    "attack_base": 5.0,
+    "max_damage": 131
+  },
+  "render": {
+    "carry_type": "default",
+    "texture": "teblade:model/silverwood_saya.png"
+  }
+}

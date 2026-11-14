@@ -1,0 +1,22 @@
+{
+  "entries": [
+    {
+      "enum": "mods/flammpfeil/slashblade/item/SwordType",
+      "name": "TEBLADE_ANOMALY",
+      "constructor": "(Ljava/util/function/BiFunction;)V",
+      "parameters": {
+        "class": "net/mrqx/slashblade/teblade/registry/TEBladeSwordTypes",
+        "field": "ANOMALY"
+      }
+    },
+    {
+      "enum": "mods/flammpfeil/slashblade/item/SwordType",
+      "name": "TEBLADE_TERMINAL",
+      "constructor": "(Ljava/util/function/BiFunction;)V",
+      "parameters": {
+        "class": "net/mrqx/slashblade/teblade/registry/TEBladeSwordTypes",
+        "field": "TERMINAL"
+      }
+    }
+  ]
+}

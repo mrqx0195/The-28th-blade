@@ -1,0 +1,95 @@
+{
+  "type": "thaumaturge:infusion",
+  "aspects": [
+    {
+      "amount": 17,
+      "aspect": "teblade:rain"
+    },
+    {
+      "amount": 14,
+      "aspect": "teblade:stasis"
+    },
+    {
+      "amount": 29,
+      "aspect": "teblade:slash_blade"
+    },
+    {
+      "amount": 46,
+      "aspect": "teblade:proud_soul"
+    },
+    {
+      "aspect": "teblade:akuryo"
+    }
+  ],
+  "catalyst": {
+    "type": "slashblade:blade",
+    "items": [
+      "slashblade:slashblade"
+    ],
+    "request": {
+      "name": "teblade:rodai_mystery_tide"
+    }
+  },
+  "components": [
+    {
+      "item": "minecraft:heart_of_the_sea"
+    },
+    {
+      "item": "minecraft:slime_block"
+    },
+    {
+      "item": "thaumaturge:crystal_aqua"
+    },
+    {
+      "item": "slashblade:proudsoul_trapezohedron"
+    }
+  ],
+  "instability": 5,
+  "research": {
+    "entry": "teblade:breath_tide"
+  },
+  "result": {
+    "components": {
+      "minecraft:enchantments": {
+        "levels": {
+          "minecraft:efficiency": 5,
+          "minecraft:power": 5
+        }
+      },
+      "minecraft:max_damage": 174,
+      "minecraft:rarity": "epic",
+      "slashblade:blade_state": {
+        "adjust": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "baseAttackModifier": 4.0,
+        "broken": false,
+        "carryType": "default",
+        "comboRoot": "slashblade:standby",
+        "defaultBewitched": true,
+        "defaultSwordTypes": [
+          "bewitched",
+          "teblade_anomaly"
+        ],
+        "effectColor": -15393880,
+        "effectColorInverse": false,
+        "killCount": 0,
+        "model": "teblade:model/named/rainshower/rainshower.obj",
+        "proudSoul": 0,
+        "refine": 0,
+        "sealed": false,
+        "slashArtsKey": "teblade:rainshower",
+        "specialEffects": [
+          "teblade:sudden_rain",
+          "teblade:witness_rainbow"
+        ],
+        "texture": "teblade:model/named/rainshower/rainshower.png",
+        "translationKey": "item.teblade.rainshower"
+      }
+    },
+    "count": 1,
+    "id": "slashblade:slashblade"
+  }
+}

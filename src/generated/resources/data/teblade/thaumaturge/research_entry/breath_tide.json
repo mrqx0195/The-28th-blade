@@ -1,0 +1,54 @@
+{
+  "category": "teblade:bladecraft",
+  "column": 8,
+  "icons": [
+    "thaumaturge:essentia_crystal"
+  ],
+  "name": "research.teblade.breath_tide.title",
+  "note_aspects": [
+    {
+      "amount": 5,
+      "aspect": "thaumaturge:aqua"
+    },
+    {
+      "amount": 5,
+      "aspect": "thaumaturge:herba"
+    }
+  ],
+  "parents": [
+    "teblade:six_breaths"
+  ],
+  "row": 0,
+  "stages": [
+    {
+      "obtain": [
+        {
+          "amount": 1,
+          "components": {
+            "thaumaturge:crystal_aspect": {
+              "aspect": "thaumaturge:aqua"
+            }
+          },
+          "items": "thaumaturge:essentia_crystal"
+        }
+      ],
+      "required_knowledge": [
+        {
+          "type": "observation",
+          "amount": 1,
+          "category": "teblade:bladecraft"
+        }
+      ],
+      "text": "research.teblade.breath_tide.stage_0"
+    },
+    {
+      "recipes": [
+        "teblade:infusion/rodai_mystery_tide",
+        "teblade:infusion/rodai_void_tide",
+        "teblade:infusion/rodai_blood_tide",
+        "teblade:infusion/rodai_taint_tide"
+      ],
+      "text": "research.teblade.breath_tide.stage_1"
+    }
+  ]
+}

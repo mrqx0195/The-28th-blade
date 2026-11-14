@@ -1,0 +1,430 @@
+{
+  "type": "thaumaturge:infusion",
+  "aspects": [
+    {
+      "amount": 60,
+      "aspect": "thaumaturge:aer"
+    },
+    {
+      "amount": 60,
+      "aspect": "thaumaturge:ignis"
+    },
+    {
+      "amount": 60,
+      "aspect": "thaumaturge:aqua"
+    },
+    {
+      "amount": 60,
+      "aspect": "thaumaturge:terra"
+    },
+    {
+      "amount": 60,
+      "aspect": "thaumaturge:ordo"
+    },
+    {
+      "amount": 60,
+      "aspect": "thaumaturge:perditio"
+    },
+    {
+      "amount": 40,
+      "aspect": "thaumaturge:praecantatio"
+    },
+    {
+      "amount": 40,
+      "aspect": "thaumaturge:alienis"
+    },
+    {
+      "amount": 100,
+      "aspect": "teblade:slash_blade"
+    },
+    {
+      "amount": 100,
+      "aspect": "teblade:proud_soul"
+    },
+    {
+      "amount": 100,
+      "aspect": "teblade:akuryo"
+    }
+  ],
+  "catalyst": [
+    {
+      "type": "slashblade:blade",
+      "items": [
+        "slashblade:slashblade"
+      ],
+      "request": {
+        "name": "teblade:rodai_mystery_thunder"
+      }
+    },
+    {
+      "type": "slashblade:blade",
+      "items": [
+        "slashblade:slashblade"
+      ],
+      "request": {
+        "name": "teblade:rodai_mystery_sky"
+      }
+    },
+    {
+      "type": "slashblade:blade",
+      "items": [
+        "slashblade:slashblade"
+      ],
+      "request": {
+        "name": "teblade:rodai_mystery_tide"
+      }
+    },
+    {
+      "type": "slashblade:blade",
+      "items": [
+        "slashblade:slashblade"
+      ],
+      "request": {
+        "name": "teblade:rodai_mystery_growth"
+      }
+    },
+    {
+      "type": "slashblade:blade",
+      "items": [
+        "slashblade:slashblade"
+      ],
+      "request": {
+        "name": "teblade:rodai_mystery_flame"
+      }
+    },
+    {
+      "type": "slashblade:blade",
+      "items": [
+        "slashblade:slashblade"
+      ],
+      "request": {
+        "name": "teblade:rodai_mystery_earth"
+      }
+    },
+    {
+      "type": "slashblade:blade",
+      "items": [
+        "slashblade:slashblade"
+      ],
+      "request": {
+        "name": "teblade:rodai_void_thunder"
+      }
+    },
+    {
+      "type": "slashblade:blade",
+      "items": [
+        "slashblade:slashblade"
+      ],
+      "request": {
+        "name": "teblade:rodai_void_sky"
+      }
+    },
+    {
+      "type": "slashblade:blade",
+      "items": [
+        "slashblade:slashblade"
+      ],
+      "request": {
+        "name": "teblade:rodai_void_tide"
+      }
+    },
+    {
+      "type": "slashblade:blade",
+      "items": [
+        "slashblade:slashblade"
+      ],
+      "request": {
+        "name": "teblade:rodai_void_growth"
+      }
+    },
+    {
+      "type": "slashblade:blade",
+      "items": [
+        "slashblade:slashblade"
+      ],
+      "request": {
+        "name": "teblade:rodai_void_flame"
+      }
+    },
+    {
+      "type": "slashblade:blade",
+      "items": [
+        "slashblade:slashblade"
+      ],
+      "request": {
+        "name": "teblade:rodai_void_earth"
+      }
+    },
+    {
+      "type": "slashblade:blade",
+      "items": [
+        "slashblade:slashblade"
+      ],
+      "request": {
+        "name": "teblade:rodai_blood_thunder"
+      }
+    },
+    {
+      "type": "slashblade:blade",
+      "items": [
+        "slashblade:slashblade"
+      ],
+      "request": {
+        "name": "teblade:rodai_blood_sky"
+      }
+    },
+    {
+      "type": "slashblade:blade",
+      "items": [
+        "slashblade:slashblade"
+      ],
+      "request": {
+        "name": "teblade:rodai_blood_tide"
+      }
+    },
+    {
+      "type": "slashblade:blade",
+      "items": [
+        "slashblade:slashblade"
+      ],
+      "request": {
+        "name": "teblade:rodai_blood_growth"
+      }
+    },
+    {
+      "type": "slashblade:blade",
+      "items": [
+        "slashblade:slashblade"
+      ],
+      "request": {
+        "name": "teblade:rodai_blood_flame"
+      }
+    },
+    {
+      "type": "slashblade:blade",
+      "items": [
+        "slashblade:slashblade"
+      ],
+      "request": {
+        "name": "teblade:rodai_blood_earth"
+      }
+    },
+    {
+      "type": "slashblade:blade",
+      "items": [
+        "slashblade:slashblade"
+      ],
+      "request": {
+        "name": "teblade:rodai_taint_thunder"
+      }
+    },
+    {
+      "type": "slashblade:blade",
+      "items": [
+        "slashblade:slashblade"
+      ],
+      "request": {
+        "name": "teblade:rodai_taint_sky"
+      }
+    },
+    {
+      "type": "slashblade:blade",
+      "items": [
+        "slashblade:slashblade"
+      ],
+      "request": {
+        "name": "teblade:rodai_taint_tide"
+      }
+    },
+    {
+      "type": "slashblade:blade",
+      "items": [
+        "slashblade:slashblade"
+      ],
+      "request": {
+        "name": "teblade:rodai_taint_growth"
+      }
+    },
+    {
+      "type": "slashblade:blade",
+      "items": [
+        "slashblade:slashblade"
+      ],
+      "request": {
+        "name": "teblade:rodai_taint_flame"
+      }
+    },
+    {
+      "type": "slashblade:blade",
+      "items": [
+        "slashblade:slashblade"
+      ],
+      "request": {
+        "name": "teblade:rodai_taint_earth"
+      }
+    }
+  ],
+  "components": [
+    {
+      "type": "slashblade:blade",
+      "items": [
+        "slashblade:slashblade"
+      ],
+      "request": {
+        "name": "teblade:rodai_mystery"
+      }
+    },
+    {
+      "type": "slashblade:blade",
+      "items": [
+        "slashblade:slashblade"
+      ],
+      "request": {
+        "name": "teblade:rodai_void"
+      }
+    },
+    {
+      "type": "slashblade:blade",
+      "items": [
+        "slashblade:slashblade"
+      ],
+      "request": {
+        "name": "teblade:rodai_blood"
+      }
+    },
+    {
+      "type": "slashblade:blade",
+      "items": [
+        "slashblade:slashblade"
+      ],
+      "request": {
+        "name": "teblade:rodai_taint"
+      }
+    },
+    [
+      {
+        "type": "neoforge:components",
+        "components": {
+          "minecraft:damage": 0
+        },
+        "items": "thaumaturge:primordial_pearl"
+      },
+      {
+        "type": "neoforge:components",
+        "components": {
+          "minecraft:damage": 1
+        },
+        "items": "thaumaturge:primordial_pearl"
+      },
+      {
+        "type": "neoforge:components",
+        "components": {
+          "minecraft:damage": 2
+        },
+        "items": "thaumaturge:primordial_pearl"
+      }
+    ],
+    {
+      "type": "neoforge:components",
+      "components": {
+        "thaumaturge:crystal_aspect": {
+          "aspect": "thaumaturge:aer"
+        }
+      },
+      "items": "thaumaturge:essentia_crystal"
+    },
+    {
+      "type": "neoforge:components",
+      "components": {
+        "thaumaturge:crystal_aspect": {
+          "aspect": "thaumaturge:ignis"
+        }
+      },
+      "items": "thaumaturge:essentia_crystal"
+    },
+    {
+      "type": "neoforge:components",
+      "components": {
+        "thaumaturge:crystal_aspect": {
+          "aspect": "thaumaturge:aqua"
+        }
+      },
+      "items": "thaumaturge:essentia_crystal"
+    },
+    {
+      "type": "neoforge:components",
+      "components": {
+        "thaumaturge:crystal_aspect": {
+          "aspect": "thaumaturge:terra"
+        }
+      },
+      "items": "thaumaturge:essentia_crystal"
+    },
+    {
+      "type": "neoforge:components",
+      "components": {
+        "thaumaturge:crystal_aspect": {
+          "aspect": "thaumaturge:ordo"
+        }
+      },
+      "items": "thaumaturge:essentia_crystal"
+    },
+    {
+      "type": "neoforge:components",
+      "components": {
+        "thaumaturge:crystal_aspect": {
+          "aspect": "thaumaturge:perditio"
+        }
+      },
+      "items": "thaumaturge:essentia_crystal"
+    },
+    {
+      "item": "thaumaturge:runed_tablet"
+    }
+  ],
+  "instability": 10,
+  "research": {
+    "entry": "teblade:primordial_curse",
+    "stage": 1
+  },
+  "result": {
+    "components": {
+      "minecraft:max_damage": 300,
+      "minecraft:rarity": "epic",
+      "slashblade:blade_state": {
+        "adjust": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "baseAttackModifier": 9.0,
+        "broken": false,
+        "carryType": "default",
+        "comboRoot": "slashblade:standby",
+        "defaultBewitched": true,
+        "defaultSwordTypes": [
+          "bewitched",
+          "teblade_anomaly"
+        ],
+        "effectColor": -11853958,
+        "effectColorInverse": false,
+        "killCount": 0,
+        "model": "teblade:model/named/primordial_curse/primordial_curse.obj",
+        "proudSoul": 0,
+        "refine": 0,
+        "sealed": false,
+        "slashArtsKey": "slashblade:judgement_cut",
+        "specialEffects": [
+          "teblade:vis_repair",
+          "teblade:flux_blade",
+          "teblade:mystery_rite",
+          "teblade:void_step"
+        ],
+        "texture": "teblade:model/named/primordial_curse/primordial_curse.png",
+        "translationKey": "item.teblade.primordial_curse"
+      }
+    },
+    "count": 1,
+    "id": "slashblade:slashblade"
+  }
+}

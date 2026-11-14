@@ -1,0 +1,40 @@
+{
+  "category": "teblade:bladecraft",
+  "column": 2,
+  "icons": [
+    "thaumaturge:thaumium_sword"
+  ],
+  "name": "research.teblade.rodai_mystery.title",
+  "note_aspects": [
+    {
+      "amount": 5,
+      "aspect": "teblade:proud_soul"
+    },
+    {
+      "amount": 5,
+      "aspect": "thaumaturge:praecantatio"
+    }
+  ],
+  "parents": [
+    "teblade:blade_rodai"
+  ],
+  "row": -3,
+  "stages": [
+    {
+      "required_knowledge": [
+        {
+          "type": "observation",
+          "amount": 1,
+          "category": "teblade:bladecraft"
+        }
+      ],
+      "text": "research.teblade.rodai_mystery.stage_0"
+    },
+    {
+      "recipes": [
+        "teblade:infusion/rodai_mystery"
+      ],
+      "text": "research.teblade.rodai_mystery.stage_1"
+    }
+  ]
+}

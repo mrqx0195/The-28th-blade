@@ -1,0 +1,17 @@
+{
+  "category": "thaumaturge:basics",
+  "column": 10,
+  "icons": [
+    "slashblade:slashblade"
+  ],
+  "meta": [
+    "hidden"
+  ],
+  "name": "research.teblade.scanned.slashblade.title",
+  "row": 8,
+  "stages": [
+    {
+      "text": "research.teblade.scanned.slashblade.stage_0"
+    }
+  ]
+}

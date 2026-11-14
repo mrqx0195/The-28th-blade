@@ -1,0 +1,9 @@
+{
+  "color": 29621,
+  "components": [
+    "thaumaturge:motus",
+    "thaumaturge:vinculum"
+  ],
+  "tag": "stasis",
+  "texture": "teblade:textures/aspects/stasis.png"
+}

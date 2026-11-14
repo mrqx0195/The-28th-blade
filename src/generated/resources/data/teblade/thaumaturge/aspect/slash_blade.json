@@ -1,0 +1,9 @@
+{
+  "color": 16053492,
+  "components": [
+    "thaumaturge:instrumentum",
+    "teblade:proud_soul"
+  ],
+  "tag": "slash_blade",
+  "texture": "teblade:textures/aspects/slash_blade.png"
+}

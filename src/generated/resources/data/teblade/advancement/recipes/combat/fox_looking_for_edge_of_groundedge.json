@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_slashblade": {
+      "conditions": {
+        "items": [
+          {
+            "items": "slashblade:slashblade"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "teblade:fox_looking_for_edge_of_groundedge"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_slashblade"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "teblade:fox_looking_for_edge_of_groundedge"
+    ]
+  }
+}

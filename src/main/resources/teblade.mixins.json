@@ -1,0 +1,10 @@
+{
+  "package": "net.mrqx.slashblade.teblade.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "required": true,
+  "minVersion": "0.8",
+  "refmap": "teblade.refmap.json",
+  "mixins": [
+    "MixinItemSlashBlade"
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "aspect": "teblade:proud_soul",
+  "behavior": {
+    "type": "teblade:summoned_swords_array"
+  },
+  "color": 4118984,
+  "complexity": 9,
+  "icon": "thaumaturge:textures/foci/spread.png",
+  "research": {
+    "entry": "teblade:spell_summoned_swords"
+  },
+  "settings": [
+    {
+      "complexity": 0.5,
+      "default": 0,
+      "key": "formation",
+      "labels": [
+        "spell.teblade.setting.formation.spiral",
+        "spell.teblade.setting.formation.storm",
+        "spell.teblade.setting.formation.blistering",
+        "spell.teblade.setting.formation.heavy_rain"
+      ],
+      "max": 3,
+      "min": 0,
+      "name": "spell.teblade.setting.formation"
+    },
+    {
+      "complexity": 0.75,
+      "default": 4,
+      "key": "count",
+      "max": 8,
+      "min": 4,
+      "name": "spell.teblade.setting.count"
+    }
+  ]
+}

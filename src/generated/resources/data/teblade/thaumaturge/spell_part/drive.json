@@ -1,0 +1,22 @@
+{
+  "aspect": "teblade:akuryo",
+  "behavior": {
+    "type": "teblade:drive"
+  },
+  "color": 16747099,
+  "complexity": 4,
+  "icon": "thaumaturge:textures/foci/bolt.png",
+  "research": {
+    "entry": "teblade:spell_drive"
+  },
+  "settings": [
+    {
+      "complexity": 0.5,
+      "default": 4,
+      "key": "range",
+      "max": 8,
+      "min": 1,
+      "name": "spell.teblade.setting.range"
+    }
+  ]
+}

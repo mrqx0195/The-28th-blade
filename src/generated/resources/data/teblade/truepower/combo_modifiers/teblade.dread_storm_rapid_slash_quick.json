@@ -1,0 +1,13 @@
+{
+  "behavior": {
+    "cancelAction": {
+      "frame": -1,
+      "jumpOnly": false
+    }
+  },
+  "end_frame": 1,
+  "motionLoc": "teblade:vmd/dread_storm_rapid_slash.blade.vmd",
+  "name": "teblade.dread_storm_rapid_slash_quick",
+  "priority": 70,
+  "start_frame": 0
+}

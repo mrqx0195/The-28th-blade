@@ -1,0 +1,18 @@
+{
+  "entity": [
+    {
+      "type": "thaumaturge:damage",
+      "base": 1.0,
+      "damage_type": "minecraft:indirect_magic",
+      "per_power": 0.5
+    },
+    {
+      "type": "thaumaturge:mob_effect",
+      "effect": "minecraft:wither",
+      "ticks": 100.0
+    }
+  ],
+  "research": {
+    "entry": "teblade:rodai_mystery"
+  }
+}

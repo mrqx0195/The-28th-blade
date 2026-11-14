@@ -1,0 +1,20 @@
+{
+  "behavior": {
+    "cancelAction": {
+      "frame": -1,
+      "jumpOnly": false
+    },
+    "tickShouldLockOn": [
+      {
+        "end": 16,
+        "start": 6,
+        "value": false
+      }
+    ]
+  },
+  "end_frame": 27,
+  "motionLoc": "teblade:vmd/judgement_cut_stinger.blade.vmd",
+  "name": "teblade.dread_storm_judgement_cut_stinger",
+  "priority": 50,
+  "start_frame": 0
+}

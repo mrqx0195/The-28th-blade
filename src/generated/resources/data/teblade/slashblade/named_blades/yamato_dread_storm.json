@@ -1,0 +1,41 @@
+{
+  "enchantments": [
+    {
+      "id": "minecraft:power",
+      "lvl": 5
+    },
+    {
+      "id": "minecraft:soul_speed",
+      "lvl": 5
+    },
+    {
+      "id": "minecraft:infinity",
+      "lvl": 5
+    },
+    {
+      "id": "minecraft:sharpness",
+      "lvl": 5
+    },
+    {
+      "id": "minecraft:sweeping_edge",
+      "lvl": 5
+    }
+  ],
+  "name": "teblade:yamato_dread_storm",
+  "properties": {
+    "attack_base": 28.0,
+    "max_damage": 1000,
+    "root_combo": "teblade:dread_storm_standby",
+    "slash_art": "teblade:judgement_cut_dread_storm",
+    "sword_type": [
+      "bewitched",
+      "teblade_terminal"
+    ]
+  },
+  "render": {
+    "carry_type": "default",
+    "model": "teblade:model/named/yamato/yamato_dread_storm.obj",
+    "summon_sword_color": -16098682,
+    "texture": "teblade:model/named/yamato/yamato_dread_storm.png"
+  }
+}

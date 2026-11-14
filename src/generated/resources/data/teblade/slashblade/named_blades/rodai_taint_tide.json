@@ -1,0 +1,15 @@
+{
+  "name": "teblade:rodai_taint_tide",
+  "properties": {
+    "max_damage": 59,
+    "slash_art": "teblade:tide_art",
+    "special_effects": [
+      "teblade:taint_mark",
+      "teblade:tide"
+    ]
+  },
+  "render": {
+    "carry_type": "default",
+    "texture": "teblade:model/rodai/rodai_taint_tide.png"
+  }
+}

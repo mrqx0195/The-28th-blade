@@ -1,0 +1,24 @@
+{
+  "conditions": [
+    {
+      "item": "slashblade:slashblade",
+      "predicates": {
+        "slashblade:slashblade": {
+          "requestBlade": {
+            "name": "teblade:greatwood_dummy"
+          }
+        }
+      }
+    },
+    {
+      "item": "slashblade:slashblade",
+      "predicates": {
+        "slashblade:slashblade": {
+          "requestBlade": {
+            "name": "teblade:silverwood_saya"
+          }
+        }
+      }
+    }
+  ]
+}

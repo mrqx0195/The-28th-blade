@@ -1,0 +1,14 @@
+{
+  "behavior": {
+    "cancelAction": {
+      "frame": -1,
+      "jumpOnly": false
+    },
+    "clickSummonBlastSword": {}
+  },
+  "end_frame": 33,
+  "motionLoc": "teblade:vmd/dread_storm_rapid_slash.blade.vmd",
+  "name": "teblade.dread_storm_rapid_slash_end",
+  "priority": 70,
+  "start_frame": 9
+}

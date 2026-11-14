@@ -1,0 +1,111 @@
+{
+  "type": "thaumaturge:infusion",
+  "aspects": [
+    {
+      "amount": 8,
+      "aspect": "thaumaturge:bestia"
+    },
+    {
+      "amount": 22,
+      "aspect": "thaumaturge:gelum"
+    },
+    {
+      "amount": 28,
+      "aspect": "thaumaturge:terra"
+    },
+    {
+      "amount": 15,
+      "aspect": "thaumaturge:vacuos"
+    },
+    {
+      "amount": 10,
+      "aspect": "teblade:proud_soul"
+    }
+  ],
+  "catalyst": {
+    "type": "slashblade:blade",
+    "items": [
+      "slashblade:slashblade"
+    ],
+    "request": {
+      "name": "slashblade:fox_black"
+    }
+  },
+  "components": [
+    {
+      "item": "minecraft:emerald"
+    },
+    {
+      "item": "minecraft:sweet_berries"
+    },
+    {
+      "item": "minecraft:rabbit_foot"
+    },
+    {
+      "item": "minecraft:rabbit_stew"
+    },
+    {
+      "item": "minecraft:egg"
+    },
+    {
+      "item": "minecraft:wheat"
+    },
+    {
+      "item": "minecraft:leather"
+    },
+    {
+      "item": "minecraft:feather"
+    },
+    {
+      "item": "minecraft:powder_snow_bucket"
+    }
+  ],
+  "instability": 5,
+  "research": {
+    "entry": "teblade:blade_rodai"
+  },
+  "result": {
+    "components": {
+      "minecraft:enchantments": {
+        "levels": {
+          "minecraft:efficiency": 2,
+          "minecraft:frost_walker": 8,
+          "minecraft:quick_charge": 2
+        }
+      },
+      "minecraft:max_damage": 80,
+      "minecraft:rarity": "epic",
+      "slashblade:blade_state": {
+        "adjust": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "baseAttackModifier": 22.0,
+        "broken": false,
+        "carryType": "default",
+        "comboRoot": "slashblade:standby",
+        "defaultBewitched": true,
+        "defaultSwordTypes": [
+          "bewitched",
+          "teblade_anomaly"
+        ],
+        "effectColor": -13944981,
+        "effectColorInverse": false,
+        "killCount": 0,
+        "model": "teblade:model/named/fox/fox_looking_for_edge_of_groundedge.obj",
+        "proudSoul": 0,
+        "refine": 0,
+        "sealed": false,
+        "slashArtsKey": "slashblade:sakura_end",
+        "specialEffects": [
+          "teblade:fox_wish_snow_wish"
+        ],
+        "texture": "teblade:model/named/fox/fox_looking_for_edge_of_groundedge.png",
+        "translationKey": "item.teblade.fox_looking_for_edge_of_groundedge"
+      }
+    },
+    "count": 1,
+    "id": "slashblade:slashblade"
+  }
+}

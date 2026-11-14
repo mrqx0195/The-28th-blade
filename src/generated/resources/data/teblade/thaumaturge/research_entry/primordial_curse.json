@@ -1,0 +1,63 @@
+{
+  "category": "teblade:bladecraft",
+  "column": 13,
+  "complexity": 3,
+  "icons": [
+    "thaumaturge:primordial_pearl"
+  ],
+  "meta": [
+    "spiky",
+    "hidden"
+  ],
+  "name": "research.teblade.primordial_curse.title",
+  "note_aspects": [
+    {
+      "amount": 10,
+      "aspect": "teblade:akuryo"
+    },
+    {
+      "amount": 10,
+      "aspect": "teblade:proud_soul"
+    },
+    {
+      "amount": 10,
+      "aspect": "teblade:slash_blade"
+    },
+    {
+      "amount": 10,
+      "aspect": "thaumaturge:alienis"
+    },
+    {
+      "amount": 10,
+      "aspect": "thaumaturge:praecantatio"
+    }
+  ],
+  "parents": [
+    "teblade:six_breaths",
+    "thaumaturge:primordial_pearl",
+    "thaumaturge:warp"
+  ],
+  "row": 0,
+  "stages": [
+    {
+      "required_knowledge": [
+        {
+          "type": "theory",
+          "amount": 1,
+          "category": "teblade:bladecraft"
+        }
+      ],
+      "text": "research.teblade.primordial_curse.stage_0"
+    },
+    {
+      "recipes": [
+        "teblade:infusion/primordial_curse"
+      ],
+      "text": "research.teblade.primordial_curse.stage_1",
+      "warp": 2
+    },
+    {
+      "text": "research.teblade.primordial_curse.stage_2"
+    }
+  ]
+}

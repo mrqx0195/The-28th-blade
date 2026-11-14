@@ -1,0 +1,13 @@
+{
+  "behavior": {
+    "cancelAction": {
+      "frame": -1,
+      "jumpOnly": false
+    }
+  },
+  "end_frame": 105,
+  "motionLoc": "teblade:vmd/judgement_cut_stinger.blade.vmd",
+  "name": "teblade.dread_storm_judgement_cut_stinger_end2",
+  "priority": 100,
+  "start_frame": 85
+}

@@ -1,0 +1,63 @@
+{
+  "category": "teblade:bladecraft",
+  "column": 10,
+  "icons": [
+    "thaumaturge:essentia_crystal"
+  ],
+  "name": "research.teblade.breath_growth.title",
+  "note_aspects": [
+    {
+      "amount": 5,
+      "aspect": "thaumaturge:ordo"
+    },
+    {
+      "amount": 5,
+      "aspect": "thaumaturge:perditio"
+    }
+  ],
+  "parents": [
+    "teblade:six_breaths"
+  ],
+  "row": 0,
+  "stages": [
+    {
+      "obtain": [
+        {
+          "amount": 1,
+          "components": {
+            "thaumaturge:crystal_aspect": {
+              "aspect": "thaumaturge:ordo"
+            }
+          },
+          "items": "thaumaturge:essentia_crystal"
+        },
+        {
+          "amount": 1,
+          "components": {
+            "thaumaturge:crystal_aspect": {
+              "aspect": "thaumaturge:perditio"
+            }
+          },
+          "items": "thaumaturge:essentia_crystal"
+        }
+      ],
+      "required_knowledge": [
+        {
+          "type": "observation",
+          "amount": 1,
+          "category": "teblade:bladecraft"
+        }
+      ],
+      "text": "research.teblade.breath_growth.stage_0"
+    },
+    {
+      "recipes": [
+        "teblade:infusion/rodai_mystery_growth",
+        "teblade:infusion/rodai_void_growth",
+        "teblade:infusion/rodai_blood_growth",
+        "teblade:infusion/rodai_taint_growth"
+      ],
+      "text": "research.teblade.breath_growth.stage_1"
+    }
+  ]
+}

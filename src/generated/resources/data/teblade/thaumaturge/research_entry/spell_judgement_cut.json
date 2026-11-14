@@ -1,0 +1,34 @@
+{
+  "category": "teblade:bladecraft",
+  "column": -1,
+  "complexity": 3,
+  "icons": [
+    "thaumaturge:void_sword"
+  ],
+  "meta": [
+    "reverse"
+  ],
+  "name": "research.teblade.spell_judgement_cut.title",
+  "note_aspects": [
+    {
+      "amount": 5,
+      "aspect": "teblade:proud_soul"
+    }
+  ],
+  "parents": [
+    "teblade:unlock_bladecraft"
+  ],
+  "row": 2,
+  "stages": [
+    {
+      "required_knowledge": [
+        {
+          "type": "theory",
+          "amount": 1,
+          "category": "teblade:bladecraft"
+        }
+      ],
+      "text": "research.teblade.spell_judgement_cut.stage_0"
+    }
+  ]
+}

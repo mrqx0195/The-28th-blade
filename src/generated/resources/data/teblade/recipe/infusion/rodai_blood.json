@@ -1,0 +1,80 @@
+{
+  "type": "thaumaturge:infusion",
+  "aspects": [
+    {
+      "amount": 10,
+      "aspect": "thaumaturge:victus"
+    },
+    {
+      "amount": 10,
+      "aspect": "thaumaturge:aversio"
+    },
+    {
+      "amount": 15,
+      "aspect": "teblade:slash_blade"
+    },
+    {
+      "amount": 10,
+      "aspect": "teblade:proud_soul"
+    },
+    {
+      "amount": 5,
+      "aspect": "teblade:akuryo"
+    }
+  ],
+  "catalyst": {
+    "type": "slashblade:blade",
+    "items": [
+      "slashblade:slashblade"
+    ],
+    "request": {
+      "name": "teblade:silverwood_saya"
+    }
+  },
+  "components": [
+    {
+      "item": "thaumaturge:crimson_blade"
+    },
+    {
+      "item": "thaumaturge:salis_mundus"
+    }
+  ],
+  "instability": 5,
+  "research": {
+    "entry": "teblade:rodai_blood"
+  },
+  "result": {
+    "components": {
+      "!minecraft:rarity": {},
+      "minecraft:max_damage": 200,
+      "slashblade:blade_state": {
+        "adjust": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "baseAttackModifier": 7.5,
+        "broken": false,
+        "carryType": "default",
+        "comboRoot": "slashblade:standby",
+        "defaultBewitched": false,
+        "defaultSwordTypes": [],
+        "effectColor": -13421569,
+        "effectColorInverse": false,
+        "killCount": 0,
+        "model": "slashblade:model/blade.obj",
+        "proudSoul": 0,
+        "refine": 0,
+        "sealed": false,
+        "slashArtsKey": "slashblade:piercing",
+        "specialEffects": [
+          "teblade:bloodthirst"
+        ],
+        "texture": "teblade:model/rodai/rodai_blood.png",
+        "translationKey": "item.teblade.rodai_blood"
+      }
+    },
+    "count": 1,
+    "id": "slashblade:slashblade"
+  }
+}

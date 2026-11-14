@@ -1,0 +1,13 @@
+{
+  "behavior": {
+    "cancelAction": {
+      "frame": -1,
+      "jumpOnly": false
+    }
+  },
+  "end_frame": 1537,
+  "motionLoc": "slashblade:combostate/motion.vmd",
+  "name": "teblade.dread_storm_aerial_rave_b4_end",
+  "priority": 80,
+  "start_frame": 1513
+}

@@ -1,0 +1,19 @@
+{
+  "behavior": {
+    "cancelAction": {
+      "frame": -1,
+      "jumpOnly": false
+    },
+    "tickSnapLockOn": [
+      {
+        "end": 2,
+        "start": 0
+      }
+    ]
+  },
+  "end_frame": 10,
+  "motionLoc": "teblade:vmd/dread_storm_diving_star.blade.vmd",
+  "name": "teblade.dread_storm_diving_star",
+  "priority": 80,
+  "start_frame": 0
+}

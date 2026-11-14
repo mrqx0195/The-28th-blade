@@ -1,0 +1,17 @@
+{
+  "entity": [
+    {
+      "type": "thaumaturge:damage",
+      "base": 1.0,
+      "damage_type": "minecraft:indirect_magic"
+    },
+    {
+      "type": "thaumaturge:mob_effect",
+      "effect": "minecraft:glowing",
+      "ticks": 100.0
+    }
+  ],
+  "research": {
+    "entry": "teblade:blade_rodai"
+  }
+}

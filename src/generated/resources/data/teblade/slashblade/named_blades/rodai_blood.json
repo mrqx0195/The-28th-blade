@@ -1,0 +1,15 @@
+{
+  "name": "teblade:rodai_blood",
+  "properties": {
+    "attack_base": 7.5,
+    "max_damage": 200,
+    "slash_art": "slashblade:piercing",
+    "special_effects": [
+      "teblade:bloodthirst"
+    ]
+  },
+  "render": {
+    "carry_type": "default",
+    "texture": "teblade:model/rodai/rodai_blood.png"
+  }
+}

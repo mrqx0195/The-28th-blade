@@ -1,0 +1,7 @@
+// 1.21.1	2026-11-04T22:01:23.2320184	Tags for minecraft:damage_type mod id teblade
+acd439880a0b1b55e65ecb3a2a5acb1ca50093ec data/minecraft/tags/damage_type/bypasses_armor.json
+01cad97a383718becc987a2eb7c9b7a0745f1e25 data/minecraft/tags/damage_type/bypasses_cooldown.json
+acd439880a0b1b55e65ecb3a2a5acb1ca50093ec data/minecraft/tags/damage_type/bypasses_wolf_armor.json
+acd439880a0b1b55e65ecb3a2a5acb1ca50093ec data/minecraft/tags/damage_type/can_break_armor_stand.json
+acd439880a0b1b55e65ecb3a2a5acb1ca50093ec data/minecraft/tags/damage_type/panic_causes.json
+7dc44b892adccdad185ed4101f716c128cf4a1f2 data/teblade/tags/damage_type/secondary.json
