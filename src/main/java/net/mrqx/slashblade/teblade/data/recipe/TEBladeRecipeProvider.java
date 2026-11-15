@@ -38,12 +38,30 @@ public final class TEBladeRecipeProvider extends RecipeProvider implements ICond
         if (TEBladeCompatManager.THAUMATURGE) {
             TEBladeThaumaturgeRecipes.generate(output, this.lookup.join());
         }
+        
         SlashBladeShapedRecipeBuilder.shaped(TEBladeDefinitionsProvider.FRAGMENTED_SLASHBLADE.location())
             .pattern(" I ")
             .pattern("PBP")
             .define('I', ItemTags.ANVIL)
             .define('P', SlashBladeItemTags.PROUD_SOULS)
             .define('B', SlashBladeIngredient.blankNameless())
+            .unlockedBy(getHasName(SlashBladeItems.SLASHBLADE.get()), has(SlashBladeItems.SLASHBLADE.get()))
+            .save(output);
+        
+        SlashBladeShapedRecipeBuilder.shaped(TEBladeDefinitionsProvider.RAINSHOWER.location())
+            .pattern("WWW")
+            .pattern("PBP")
+            .pattern("SSS")
+            .define('W', Items.WATER_BUCKET)
+            .define('S', Items.SLIME_BLOCK)
+            .define('P', SlashBladeItems.PROUDSOUL_TRAPEZOHEDRON.get())
+            .define('B', SlashBladeIngredient.of(RequestDefinition.Builder.newInstance()
+                .name(TEBladeDefinitionsProvider.FRAGMENTED_SLASHBLADE.location())
+                .killCount(1)
+                .proudSoul(2260)
+                .refineCount(174)
+                .addEnchantment(new EnchantmentDefinition(getEnchantmentID(Enchantments.SOUL_SPEED), 3))
+                .build()))
             .unlockedBy(getHasName(SlashBladeItems.SLASHBLADE.get()), has(SlashBladeItems.SLASHBLADE.get()))
             .save(output);
         

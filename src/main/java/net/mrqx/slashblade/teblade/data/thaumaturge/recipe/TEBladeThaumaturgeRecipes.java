@@ -156,17 +156,34 @@ public final class TEBladeThaumaturgeRecipes {
             TEBladeDefinitionsProvider.getBlade(registries, TEBladeDefinitionsProvider.RAINSHOWER),
             BladeRecipeIngredients.exact(ThaumaturgeBladeForms.variant(ThaumaturgeBladeForms.Family.MYSTERY, ThaumaturgeBladeForms.Element.TIDE)))
             .component(Ingredient.of(Items.HEART_OF_THE_SEA))
+            .component(Ingredient.of(Items.WATER_BUCKET))
             .component(Ingredient.of(Items.SLIME_BLOCK))
             .component(Ingredient.of(TTItems.CRYSTAL_AQUA))
             .component(Ingredient.of(SlashBladeItems.PROUDSOUL_TRAPEZOHEDRON.get()))
-            .instability(5)
+            .instability(7)
             .aspect(TEBladeAspects.RAIN, 17)
             .aspect(TEBladeAspects.STASIS, 14)
             .aspect(TEBladeAspects.SLASH_BLADE, 29)
             .aspect(TEBladeAspects.PROUD_SOUL, 46)
             .aspect(TEBladeAspects.AKURYO, 1)
             .gate(new ResearchGate(BladeResearchEntries.breath(ThaumaturgeBladeForms.Element.TIDE), Optional.empty(), false))
-            .save(output, TEBlade.prefix("rainshower_infusion"));
+            .save(output, TEBlade.prefix("rainshower_tide_infusion"));
+        
+        new InfusionRecipeBuilder(TEBladeThaumaturgeRecipes.aspects, RecipeCategory.COMBAT,
+            TEBladeDefinitionsProvider.getBlade(registries, TEBladeDefinitionsProvider.RAINSHOWER),
+            SlashBladeIngredient.of(RequestDefinition.Builder.newInstance().name(TEBladeDefinitionsProvider.FRAGMENTED_SLASHBLADE.location()).build()))
+            .component(Ingredient.of(Items.WATER_BUCKET))
+            .component(Ingredient.of(Items.WATER_BUCKET))
+            .component(Ingredient.of(Items.SLIME_BLOCK))
+            .component(Ingredient.of(Items.SLIME_BLOCK))
+            .component(Ingredient.of(TTItems.CRYSTAL_AQUA))
+            .component(Ingredient.of(TTItems.CRYSTAL_AQUA))
+            .instability(3)
+            .aspect(TEBladeAspects.RAIN, 174)
+            .aspect(TEBladeAspects.STASIS, 174)
+            .aspect(TEBladeAspects.AKURYO, 1)
+            .gate(new ResearchGate(BladeResearchEntries.breath(ThaumaturgeBladeForms.Element.TIDE), Optional.empty(), false))
+            .save(output, TEBlade.prefix("rainshower_fragmented_infusion"));
         
         new InfusionRecipeBuilder(TEBladeThaumaturgeRecipes.aspects, RecipeCategory.COMBAT,
             TEBladeDefinitionsProvider.getBlade(registries, TEBladeDefinitionsProvider.FOX_LOOKING_FOR_EDGE_OF_GROUNDEDGE),

@@ -1,4 +1,4 @@
-// 1.21.1	2026-11-14T18:58:11.9908668	TEBlade Thaumaturge Research
+// 1.21.1	2026-11-15T21:10:06.1466107	TEBlade Thaumaturge Research
 4fcb5954638867d659ec920b5e4ef33b534563af data/teblade/thaumaturge/research_category/bladecraft.json
 53f9a67afa19aa8293da340f26d8a9aaef6ebae3 data/teblade/thaumaturge/research_entry/blade_revert.json
 00d917b4654184e7b72ff30e2d16c6cbd2af2995 data/teblade/thaumaturge/research_entry/blade_rodai.json
@@ -15,8 +15,8 @@
 a5a9c75cc3b4253f42f9d3e597aea074cc332d9a data/teblade/thaumaturge/research_entry/rodai_void.json
 d24b1948b241b65d8611ad900495852228e167cc data/teblade/thaumaturge/research_entry/scanned/slashblade.json
 ff2033d68cc089e60a2bedb2c1b49d728d30d273 data/teblade/thaumaturge/research_entry/six_breaths.json
-16de2ac1a71cfe0c284d8629904600fadbad934d data/teblade/thaumaturge/research_entry/spell_drive.json
-5c9432922914a354950d1ed801720ce1e14eefdf data/teblade/thaumaturge/research_entry/spell_judgement_cut.json
-8d3ba2a4f078fcedc5158e7d4fb99f7a4ae6edd5 data/teblade/thaumaturge/research_entry/spell_summoned_swords.json
+a1fb17bbb21568c60d5a3ee02005aab0c84f2c4d data/teblade/thaumaturge/research_entry/spell_drive.json
+55b970acb5d74b40f35fb09b1bbfdfbe5b3d2caf data/teblade/thaumaturge/research_entry/spell_judgement_cut.json
+52ebb50da54a541a3617f5c86755df1fbb504f2c data/teblade/thaumaturge/research_entry/spell_summoned_swords.json
 704683a2cb6f0850b49df0e49a04f53f523618c0 data/teblade/thaumaturge/research_entry/unlock_bladecraft.json
 82d5a6a5582ff311369385913685d4d2e67733c6 data/teblade/thaumaturge/scan/slashblade.json

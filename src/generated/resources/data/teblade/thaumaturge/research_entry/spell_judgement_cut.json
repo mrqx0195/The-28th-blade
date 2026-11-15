@@ -13,6 +13,10 @@
     {
       "amount": 5,
       "aspect": "teblade:proud_soul"
+    },
+    {
+      "amount": 5,
+      "aspect": "thaumaturge:vacuos"
     }
   ],
   "parents": [

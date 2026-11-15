@@ -10,6 +10,10 @@
     {
       "amount": 5,
       "aspect": "teblade:akuryo"
+    },
+    {
+      "amount": 5,
+      "aspect": "thaumaturge:praecantatio"
     }
   ],
   "parents": [

@@ -11,8 +11,12 @@
   "name": "research.teblade.spell_drive.title",
   "note_aspects": [
     {
-      "amount": 5,
+      "amount": 3,
       "aspect": "teblade:slash_blade"
+    },
+    {
+      "amount": 3,
+      "aspect": "thaumaturge:motus"
     }
   ],
   "parents": [

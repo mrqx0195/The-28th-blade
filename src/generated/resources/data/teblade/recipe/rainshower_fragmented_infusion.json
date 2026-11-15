@@ -2,20 +2,12 @@
   "type": "thaumaturge:infusion",
   "aspects": [
     {
-      "amount": 17,
+      "amount": 174,
       "aspect": "teblade:rain"
     },
     {
-      "amount": 14,
+      "amount": 174,
       "aspect": "teblade:stasis"
-    },
-    {
-      "amount": 29,
-      "aspect": "teblade:slash_blade"
-    },
-    {
-      "amount": 46,
-      "aspect": "teblade:proud_soul"
     },
     {
       "aspect": "teblade:akuryo"
@@ -27,12 +19,18 @@
       "slashblade:slashblade"
     ],
     "request": {
-      "name": "teblade:rodai_mystery_tide"
+      "name": "teblade:fragmented_slashblade"
     }
   },
   "components": [
     {
-      "item": "minecraft:heart_of_the_sea"
+      "item": "minecraft:water_bucket"
+    },
+    {
+      "item": "minecraft:water_bucket"
+    },
+    {
+      "item": "minecraft:slime_block"
     },
     {
       "item": "minecraft:slime_block"
@@ -41,10 +39,10 @@
       "item": "thaumaturge:crystal_aqua"
     },
     {
-      "item": "slashblade:proudsoul_trapezohedron"
+      "item": "thaumaturge:crystal_aqua"
     }
   ],
-  "instability": 5,
+  "instability": 3,
   "research": {
     "entry": "teblade:breath_tide"
   },

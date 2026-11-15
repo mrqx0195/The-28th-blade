@@ -182,14 +182,12 @@ dependencies {
     implementation "blank:True_POWER-${minecraft_version}:${true_power_version}"
     implementation "maven.modrinth:more-slashblade-ex-enchantment-effects:B2WTE1tG"
     implementation "dev.kosmx.player-anim:player-animation-lib-forge:${player_animation_version}"
+    implementation "maven.modrinth:shoulder-surfing-reloaded:1.21.1-5.0.9+neoforge"
 
     compileOnly "mezz.jei:jei-${minecraft_version}-common-api:${jei_version}"
     compileOnly "mezz.jei:jei-${minecraft_version}-neoforge-api:${jei_version}"
     runtimeOnly "mezz.jei:jei-${minecraft_version}-neoforge:${jei_version}"
 
-    if (!project.hasProperty('excludeShoulderSurfing')) {
-        implementation "maven.modrinth:shoulder-surfing-reloaded:1.21.1-5.0.9+neoforge"
-    }
 
     // Thaumaturge, forked and fix for jitpack
     implementation 'com.github.mrqx0195:Thaumaturge:e898f3a4d0'

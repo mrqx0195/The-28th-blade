@@ -1,0 +1,43 @@
+{
+  "type": "slashblade:shaped_blade",
+  "blade": "teblade:rainshower",
+  "category": "equipment",
+  "key": {
+    "B": {
+      "type": "slashblade:blade",
+      "items": [
+        "slashblade:slashblade"
+      ],
+      "request": {
+        "enchantments": [
+          {
+            "id": "minecraft:soul_speed",
+            "lvl": 3
+          }
+        ],
+        "kill": 1,
+        "name": "teblade:fragmented_slashblade",
+        "proud_soul": 2260,
+        "refine": 174
+      }
+    },
+    "P": {
+      "item": "slashblade:proudsoul_trapezohedron"
+    },
+    "S": {
+      "item": "minecraft:slime_block"
+    },
+    "W": {
+      "item": "minecraft:water_bucket"
+    }
+  },
+  "pattern": [
+    "WWW",
+    "PBP",
+    "SSS"
+  ],
+  "result": {
+    "count": 1,
+    "id": "slashblade:slashblade"
+  }
+}
