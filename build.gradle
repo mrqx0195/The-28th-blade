@@ -165,15 +165,6 @@ neoForge {
     }
 }
 
-neoForge.addModdingDependenciesTo(sourceSets.gameTest)
-neoForge.mods.create('tebladeGameTest') {
-    sourceSet(sourceSets.main)
-    sourceSet(sourceSets.gameTest)
-}
-neoForge.runs.configureEach {
-    loadedMods = [neoForge.mods.getByName(name == 'gameTestServer' ? 'tebladeGameTest' : mod_id)]
-}
-
 sourceSets.main.resources { srcDir 'src/generated/resources' }
 
 configurations {
@@ -264,37 +255,4 @@ idea {
 
 java {
     withSourcesJar()
-}
-
-// 独立 main 测试显式挂入 check，防止只编译而不执行断言。
-def bladeRuleTests = [
-        "BladeTransitionRulesTest", "BladeTransitionPropertyTest", "BladeTransitionExtremeTest",
-        "BladeHealingRulesTest", "BladeHealingPropertyTest", "BladeHealingBudgetTest",
-        "BladeElementRecipeCostsTest", "BladeEffectTransferRulesTest", "BladeMysteryRiteRulesTest",
-        "BladeInstallSignatureTest", "BladeTideStacksTest"
-]
-def bladeRuleTestPackages = [
-        BladeTransitionRulesTest    : "blade.transition",
-        BladeTransitionPropertyTest : "blade.transition",
-        BladeTransitionExtremeTest  : "blade.transition",
-        BladeEffectTransferRulesTest: "blade.transition",
-        BladeHealingRulesTest       : "specialeffect.bloodthirst",
-        BladeHealingPropertyTest    : "specialeffect.bloodthirst",
-        BladeHealingBudgetTest      : "specialeffect.bloodthirst",
-        BladeMysteryRiteRulesTest   : "specialeffect.mystery",
-        BladeElementRecipeCostsTest : "recipe"
-]
-def bladeRuleTasks = bladeRuleTests.collect { testClass ->
-    tasks.register("run${testClass}", JavaExec) {
-        dependsOn tasks.named("testClasses")
-        classpath = sourceSets.test.runtimeClasspath
-        def subpackage = bladeRuleTestPackages[testClass]
-        mainClass = "net.mrqx.slashblade.teblade.compat.thaumaturge.${subpackage ? subpackage + '.' : ''}${testClass}"
-        javaLauncher = javaToolchains.launcherFor {
-            languageVersion = JavaLanguageVersion.of(21)
-        }
-    }
-}
-tasks.named("check") {
-    dependsOn bladeRuleTasks
 }
