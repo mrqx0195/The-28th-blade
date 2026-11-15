@@ -1,4 +1,4 @@
-package net.mrqx.slashblade.teblade.compat.thaumaturge.spell.entity;
+package net.mrqx.slashblade.teblade.compat.thaumaturge.entity;
 
 import mods.flammpfeil.slashblade.entity.EntitySpiralSwords;
 import mods.flammpfeil.slashblade.entity.Projectile;
@@ -17,12 +17,12 @@ import net.mrqx.slashblade.teblade.compat.thaumaturge.spell.TEBladeSpellFormatio
 import net.neoforged.neoforge.event.EventHooks;
 import org.joml.Vector3f;
 
-public class TEBladeEntitySpiral extends EntitySpiralSwords {
-    private static final EntityDataAccessor<Boolean> ANCHORED = SynchedEntityData.defineId(TEBladeEntitySpiral.class,
+public class EntityThaumaturgeSpiralSwords extends EntitySpiralSwords {
+    private static final EntityDataAccessor<Boolean> ANCHORED = SynchedEntityData.defineId(EntityThaumaturgeSpiralSwords.class,
         EntityDataSerializers.BOOLEAN);
-    private static final EntityDataAccessor<Vector3f> ANCHOR = SynchedEntityData.defineId(TEBladeEntitySpiral.class,
+    private static final EntityDataAccessor<Vector3f> ANCHOR = SynchedEntityData.defineId(EntityThaumaturgeSpiralSwords.class,
         EntityDataSerializers.VECTOR3);
-    private static final EntityDataAccessor<Boolean> LAUNCHED = SynchedEntityData.defineId(TEBladeEntitySpiral.class,
+    private static final EntityDataAccessor<Boolean> LAUNCHED = SynchedEntityData.defineId(EntityThaumaturgeSpiralSwords.class,
         EntityDataSerializers.BOOLEAN);
     private static final String ANCHORED_TAG = "teblade_anchored";
     private static final String ANCHOR_X_TAG = "teblade_anchor_x";
@@ -33,7 +33,7 @@ public class TEBladeEntitySpiral extends EntitySpiralSwords {
     
     private int fireIn = -1;
     
-    public TEBladeEntitySpiral(EntityType<? extends Projectile> type, Level level) {
+    public EntityThaumaturgeSpiralSwords(EntityType<? extends Projectile> type, Level level) {
         super(type, level);
     }
     

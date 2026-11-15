@@ -6,10 +6,10 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.util.Mth;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.phys.Vec3;
-import net.mrqx.slashblade.teblade.compat.thaumaturge.spell.entity.TEBladeEntityBlistering;
-import net.mrqx.slashblade.teblade.compat.thaumaturge.spell.entity.TEBladeEntityHeavyRain;
-import net.mrqx.slashblade.teblade.compat.thaumaturge.spell.entity.TEBladeEntitySpiral;
-import net.mrqx.slashblade.teblade.compat.thaumaturge.spell.entity.TEBladeEntityStorm;
+import net.mrqx.slashblade.teblade.compat.thaumaturge.entity.EntityThaumaturgeBlisteringSwords;
+import net.mrqx.slashblade.teblade.compat.thaumaturge.entity.EntityThaumaturgeHeavyRainSwords;
+import net.mrqx.slashblade.teblade.compat.thaumaturge.entity.EntityThaumaturgeSpiralSwords;
+import net.mrqx.slashblade.teblade.compat.thaumaturge.entity.EntityThaumaturgeStormSwords;
 
 import javax.annotation.Nullable;
 
@@ -29,7 +29,7 @@ public final class TEBladeSpellFormations {
         for (int i = 0; i < count; i++) {
             switch (formation) {
                 case 0 -> {
-                    TEBladeEntitySpiral sword = new TEBladeEntitySpiral(TEBladeThaumaturgeEntityTypes.SPIRAL_SWORDS.get(), level);
+                    EntityThaumaturgeSpiralSwords sword = new EntityThaumaturgeSpiralSwords(TEBladeThaumaturgeEntityTypes.THAUMATURGE_SPIRAL_SWORDS.get(), level);
                     sword.setPos(vehicle.position());
                     sword.setOwner(caster != null ? caster : vehicle);
                     sword.setColor(tint);
@@ -41,7 +41,7 @@ public final class TEBladeSpellFormations {
                     level.addFreshEntity(sword);
                 }
                 case 1 -> {
-                    TEBladeEntityStorm sword = new TEBladeEntityStorm(TEBladeThaumaturgeEntityTypes.STORM_SWORDS.get(), level);
+                    EntityThaumaturgeStormSwords sword = new EntityThaumaturgeStormSwords(TEBladeThaumaturgeEntityTypes.THAUMATURGE_STORM_SWORDS.get(), level);
                     sword.setPos(vehicle.position());
                     sword.setOwner(caster != null ? caster : vehicle);
                     sword.setColor(tint);
@@ -52,7 +52,7 @@ public final class TEBladeSpellFormations {
                     level.addFreshEntity(sword);
                 }
                 case 2 -> {
-                    TEBladeEntityBlistering sword = new TEBladeEntityBlistering(TEBladeThaumaturgeEntityTypes.BLISTERING_SWORDS.get(), level);
+                    EntityThaumaturgeBlisteringSwords sword = new EntityThaumaturgeBlisteringSwords(TEBladeThaumaturgeEntityTypes.THAUMATURGE_BLISTERING_SWORDS.get(), level);
                     sword.setPos(vehicle.position());
                     sword.setOwner(caster != null ? caster : vehicle);
                     sword.setColor(tint);
@@ -65,7 +65,7 @@ public final class TEBladeSpellFormations {
                 }
                 default -> {
                     Vec3 above = vehicle.position().add(0.0D, HEAVY_RAIN_HEIGHT, 0.0D);
-                    TEBladeEntityHeavyRain sword = new TEBladeEntityHeavyRain(TEBladeThaumaturgeEntityTypes.HEAVY_RAIN_SWORDS.get(), level);
+                    EntityThaumaturgeHeavyRainSwords sword = new EntityThaumaturgeHeavyRainSwords(TEBladeThaumaturgeEntityTypes.THAUMATURGE_HEAVY_RAIN_SWORDS.get(), level);
                     sword.setOwner(caster != null ? caster : vehicle);
                     sword.setColor(tint);
                     sword.setRoll(0.0F);
@@ -89,7 +89,7 @@ public final class TEBladeSpellFormations {
         for (int i = 0; i < count; i++) {
             switch (formation) {
                 case 0 -> {
-                    TEBladeEntitySpiral sword = new TEBladeEntitySpiral(TEBladeThaumaturgeEntityTypes.SPIRAL_SWORDS.get(), level);
+                    EntityThaumaturgeSpiralSwords sword = new EntityThaumaturgeSpiralSwords(TEBladeThaumaturgeEntityTypes.THAUMATURGE_SPIRAL_SWORDS.get(), level);
                     sword.setPos(point);
                     sword.anchorAt(point);
                     sword.setOwner(caster);
@@ -101,7 +101,7 @@ public final class TEBladeSpellFormations {
                     level.addFreshEntity(sword);
                 }
                 case 1 -> {
-                    TEBladeEntityStorm sword = new TEBladeEntityStorm(TEBladeThaumaturgeEntityTypes.STORM_SWORDS.get(), level);
+                    EntityThaumaturgeStormSwords sword = new EntityThaumaturgeStormSwords(TEBladeThaumaturgeEntityTypes.THAUMATURGE_STORM_SWORDS.get(), level);
                     sword.setPos(point);
                     sword.anchorAt(point);
                     sword.setOwner(caster);
@@ -112,7 +112,7 @@ public final class TEBladeSpellFormations {
                     level.addFreshEntity(sword);
                 }
                 case 2 -> {
-                    TEBladeEntityBlistering sword = new TEBladeEntityBlistering(TEBladeThaumaturgeEntityTypes.BLISTERING_SWORDS.get(), level);
+                    EntityThaumaturgeBlisteringSwords sword = new EntityThaumaturgeBlisteringSwords(TEBladeThaumaturgeEntityTypes.THAUMATURGE_BLISTERING_SWORDS.get(), level);
                     sword.setPos(point);
                     float yaw = virtualYaw(target.direction());
                     float pitch = virtualPitch(target.direction());
@@ -126,7 +126,7 @@ public final class TEBladeSpellFormations {
                     level.addFreshEntity(sword);
                 }
                 default -> {
-                    TEBladeEntityHeavyRain sword = new TEBladeEntityHeavyRain(TEBladeThaumaturgeEntityTypes.HEAVY_RAIN_SWORDS.get(), level);
+                    EntityThaumaturgeHeavyRainSwords sword = new EntityThaumaturgeHeavyRainSwords(TEBladeThaumaturgeEntityTypes.THAUMATURGE_HEAVY_RAIN_SWORDS.get(), level);
                     Vec3 above = point.add(0.0D, HEAVY_RAIN_HEIGHT, 0.0D);
                     sword.anchorAt(point);
                     sword.setOwner(caster);

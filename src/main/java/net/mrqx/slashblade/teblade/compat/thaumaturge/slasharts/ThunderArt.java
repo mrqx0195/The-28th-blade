@@ -11,15 +11,14 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.phys.AABB;
 import net.minecraft.world.phys.Vec3;
 import net.mrqx.sbr_core.utils.SlashBladeMovementUtils;
-import net.mrqx.slashblade.teblade.compat.thaumaturge.utils.CombatTargets;
 import net.mrqx.slashblade.teblade.data.TEBladeDamageTypesBootstrap;
+import net.mrqx.slashblade.teblade.utils.CombatTargets;
 import net.mrqx.slashblade.teblade.utils.EntityMovementUtils;
 import net.mrqx.truepower.attachment.ITruePowerStunData;
 import net.mrqx.truepower.util.TruePowerComboHelper;
 
 public final class ThunderArt {
     private static final float LIGHTNING_DAMAGE_SCALE = 0.25F;
-    private static final float SLASH_DAMAGE_SCALE = 0.30F;
     private static final int SLOWDOWN_TICKS = 20;
     private static final int STUN_TICKS = 20;
     private static final int BOLT_HEIGHT_STEPS = 5;

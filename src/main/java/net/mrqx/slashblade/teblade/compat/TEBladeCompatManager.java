@@ -1,6 +1,7 @@
 package net.mrqx.slashblade.teblade.compat;
 
 import com.leclowndu93150.thaumaturge.TTIds;
+import net.mrqx.slashblade.teblade.compat.thaumaturge.client.TEBladeThaumaturgeClient;
 import net.mrqx.slashblade.teblade.compat.thaumaturge.event.BladeObservation;
 import net.mrqx.slashblade.teblade.compat.thaumaturge.event.BladeResearchGateHandler;
 import net.mrqx.slashblade.teblade.compat.thaumaturge.event.TEBladeThaumaturgeEvents;
@@ -11,6 +12,7 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.neoforged.fml.loading.FMLEnvironment;
 import net.neoforged.fml.loading.LoadingModList;
 
 public class TEBladeCompatManager {
@@ -30,6 +32,9 @@ public class TEBladeCompatManager {
             
             modEventBus.addListener(BladeObservation::register);
             TEBladeThaumaturgeEvents.init();
+            if (FMLEnvironment.dist.isClient()) {
+                TEBladeThaumaturgeClient.init(modEventBus);
+            }
         }
     }
     

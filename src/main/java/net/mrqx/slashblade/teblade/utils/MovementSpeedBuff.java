@@ -1,4 +1,4 @@
-package net.mrqx.slashblade.teblade.compat.thaumaturge.utils;
+package net.mrqx.slashblade.teblade.utils;
 
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.LivingEntity;

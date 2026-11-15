@@ -8,7 +8,7 @@ import com.mojang.serialization.MapCodec;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.util.Mth;
 import net.minecraft.world.entity.LivingEntity;
-import net.mrqx.slashblade.teblade.compat.thaumaturge.spell.entity.TEBladeEntitySpellJudgementCut;
+import net.mrqx.slashblade.teblade.compat.thaumaturge.entity.EntityThaumaturgeSpellJudgementCut;
 
 public class TEBladeJudgementCutEffect extends AbstractEffectBehavior {
     public static final MapCodec<TEBladeJudgementCutEffect> CODEC = MapCodec.unit(TEBladeJudgementCutEffect::new);
@@ -31,7 +31,7 @@ public class TEBladeJudgementCutEffect extends AbstractEffectBehavior {
     protected void apply(CastContext ctx, SpellTarget target, float power, int index) {
         ServerLevel level = ctx.level();
         int hits = Mth.clamp(ctx.setting("hits"), 3, 8);
-        TEBladeEntitySpellJudgementCut cut = new TEBladeEntitySpellJudgementCut(
+        EntityThaumaturgeSpellJudgementCut cut = new EntityThaumaturgeSpellJudgementCut(
             TEBladeThaumaturgeEntityTypes.SPELL_JUDGEMENT_CUT.get(), level);
         cut.setPos(target.position());
         cut.setColor(TEBladeSpellTint.SLASH_BLADE_DEFAULT);

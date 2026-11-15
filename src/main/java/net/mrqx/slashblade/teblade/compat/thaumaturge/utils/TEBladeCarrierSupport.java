@@ -1,4 +1,4 @@
-package net.mrqx.slashblade.teblade.compat.thaumaturge.spell.entity;
+package net.mrqx.slashblade.teblade.compat.thaumaturge.utils;
 
 import com.leclowndu93150.thaumaturge.api.spell.cast.SpellTarget;
 import com.leclowndu93150.thaumaturge.content.spell.carrier.CarrierPayload;

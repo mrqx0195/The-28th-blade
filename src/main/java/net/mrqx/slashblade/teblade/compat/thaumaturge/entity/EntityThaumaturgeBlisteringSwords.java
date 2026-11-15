@@ -1,4 +1,4 @@
-package net.mrqx.slashblade.teblade.compat.thaumaturge.spell.entity;
+package net.mrqx.slashblade.teblade.compat.thaumaturge.entity;
 
 import mods.flammpfeil.slashblade.capability.slashblade.BladeStateAccess;
 import mods.flammpfeil.slashblade.entity.EntityBlisteringSwords;
@@ -28,16 +28,16 @@ import java.util.Objects;
 import java.util.Optional;
 import java.util.stream.Stream;
 
-public class TEBladeEntityBlistering extends EntityBlisteringSwords {
-    private static final EntityDataAccessor<Boolean> ANCHORED = SynchedEntityData.defineId(TEBladeEntityBlistering.class,
+public class EntityThaumaturgeBlisteringSwords extends EntityBlisteringSwords {
+    private static final EntityDataAccessor<Boolean> ANCHORED = SynchedEntityData.defineId(EntityThaumaturgeBlisteringSwords.class,
         EntityDataSerializers.BOOLEAN);
-    private static final EntityDataAccessor<Vector3f> ANCHOR = SynchedEntityData.defineId(TEBladeEntityBlistering.class,
+    private static final EntityDataAccessor<Vector3f> ANCHOR = SynchedEntityData.defineId(EntityThaumaturgeBlisteringSwords.class,
         EntityDataSerializers.VECTOR3);
-    private static final EntityDataAccessor<Boolean> LAUNCHED = SynchedEntityData.defineId(TEBladeEntityBlistering.class,
+    private static final EntityDataAccessor<Boolean> LAUNCHED = SynchedEntityData.defineId(EntityThaumaturgeBlisteringSwords.class,
         EntityDataSerializers.BOOLEAN);
-    private static final EntityDataAccessor<Float> ANCHOR_YAW = SynchedEntityData.defineId(TEBladeEntityBlistering.class,
+    private static final EntityDataAccessor<Float> ANCHOR_YAW = SynchedEntityData.defineId(EntityThaumaturgeBlisteringSwords.class,
         EntityDataSerializers.FLOAT);
-    private static final EntityDataAccessor<Float> ANCHOR_PITCH = SynchedEntityData.defineId(TEBladeEntityBlistering.class,
+    private static final EntityDataAccessor<Float> ANCHOR_PITCH = SynchedEntityData.defineId(EntityThaumaturgeBlisteringSwords.class,
         EntityDataSerializers.FLOAT);
     private static final String ANCHORED_TAG = "teblade_anchored";
     private static final String ANCHOR_X_TAG = "teblade_anchor_x";
@@ -51,7 +51,7 @@ public class TEBladeEntityBlistering extends EntityBlisteringSwords {
     private int fireIn = -1;
     private long tebladeFireTime = -1L;
     
-    public TEBladeEntityBlistering(EntityType<? extends Projectile> type, Level level) {
+    public EntityThaumaturgeBlisteringSwords(EntityType<? extends Projectile> type, Level level) {
         super(type, level);
     }
     

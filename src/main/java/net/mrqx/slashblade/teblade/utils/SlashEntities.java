@@ -1,4 +1,4 @@
-package net.mrqx.slashblade.teblade.compat.thaumaturge.utils;
+package net.mrqx.slashblade.teblade.utils;
 
 import mods.flammpfeil.slashblade.entity.EntityDrive;
 import mods.flammpfeil.slashblade.entity.EntityJudgementCut;

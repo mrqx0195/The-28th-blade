@@ -1,4 +1,4 @@
-package net.mrqx.slashblade.teblade.compat.thaumaturge.utils;
+package net.mrqx.slashblade.teblade.utils;
 
 import mods.flammpfeil.slashblade.util.TargetSelector;
 import net.minecraft.world.entity.LivingEntity;

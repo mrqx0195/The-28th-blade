@@ -10,7 +10,7 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.mrqx.sbr_core.utils.SlashBladeMovementUtils;
 import net.mrqx.slashblade.teblade.compat.thaumaturge.registry.TEBladeThaumaturgeMobEffects;
-import net.mrqx.slashblade.teblade.compat.thaumaturge.utils.CombatTargets;
+import net.mrqx.slashblade.teblade.utils.CombatTargets;
 import net.mrqx.truepower.util.TruePowerComboHelper;
 
 public final class EarthArt {

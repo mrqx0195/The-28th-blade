@@ -1,4 +1,4 @@
-package net.mrqx.slashblade.teblade.compat.thaumaturge.spell.entity;
+package net.mrqx.slashblade.teblade.compat.thaumaturge.entity;
 
 import com.leclowndu93150.thaumaturge.api.spell.cast.SpellTarget;
 import com.leclowndu93150.thaumaturge.content.spell.carrier.CarrierPayload;
@@ -11,17 +11,18 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.EntityHitResult;
+import net.mrqx.slashblade.teblade.compat.thaumaturge.utils.TEBladeCarrierSupport;
 
 import javax.annotation.Nullable;
 import java.util.List;
 
-public class TEBladeEntitySpellSummonedSword extends EntityAbstractSummonedSword {
+public class EntityThaumaturgeSummonedSword extends EntityAbstractSummonedSword {
     @Nullable
     private CarrierPayload payload;
     private boolean hitResumed;
     private boolean burstResumed;
     
-    public TEBladeEntitySpellSummonedSword(EntityType<? extends Projectile> entityType, Level level) {
+    public EntityThaumaturgeSummonedSword(EntityType<? extends Projectile> entityType, Level level) {
         super(entityType, level);
     }
     

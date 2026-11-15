@@ -8,7 +8,7 @@ import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
 import net.mrqx.sbr_core.utils.SlashBladeMovementUtils;
-import net.mrqx.slashblade.teblade.compat.thaumaturge.utils.CombatTargets;
+import net.mrqx.slashblade.teblade.utils.CombatTargets;
 import net.mrqx.truepower.util.TruePowerComboHelper;
 
 public final class GrowthArt {

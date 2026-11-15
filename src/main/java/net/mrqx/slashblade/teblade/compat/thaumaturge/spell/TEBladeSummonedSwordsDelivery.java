@@ -10,7 +10,7 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.util.Mth;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.phys.Vec3;
-import net.mrqx.slashblade.teblade.compat.thaumaturge.spell.entity.TEBladeEntitySpellSummonedSword;
+import net.mrqx.slashblade.teblade.compat.thaumaturge.entity.EntityThaumaturgeSummonedSword;
 
 public class TEBladeSummonedSwordsDelivery extends AbstractCarrierDelivery {
     public static final MapCodec<TEBladeSummonedSwordsDelivery> CODEC = MapCodec.unit(TEBladeSummonedSwordsDelivery::new);
@@ -44,7 +44,7 @@ public class TEBladeSummonedSwordsDelivery extends AbstractCarrierDelivery {
             double vertical = VERTICAL_STEP * (i / 2.0);
             Vec3 spawn = muzzle.add(side.scale(lateral)).add(0.0D, vertical, 0.0D);
             
-            TEBladeEntitySpellSummonedSword sword = new TEBladeEntitySpellSummonedSword(
+            EntityThaumaturgeSummonedSword sword = new EntityThaumaturgeSummonedSword(
                 TEBladeThaumaturgeEntityTypes.SPELL_SUMMONED_SWORD.get(), level);
             sword.setPos(spawn);
             sword.setDamage(0.0D);

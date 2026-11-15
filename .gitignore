@@ -29,3 +29,5 @@ docs
 .dsh-ops*
 src/test
 src/gameTest
+output
+scripts

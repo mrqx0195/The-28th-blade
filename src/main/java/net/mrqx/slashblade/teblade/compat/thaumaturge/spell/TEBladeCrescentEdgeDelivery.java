@@ -11,7 +11,7 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.util.Mth;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.phys.Vec3;
-import net.mrqx.slashblade.teblade.compat.thaumaturge.spell.entity.TEBladeEntitySpellDrive;
+import net.mrqx.slashblade.teblade.compat.thaumaturge.entity.EntityThaumaturgeSpellDrive;
 
 public class TEBladeCrescentEdgeDelivery extends AbstractCarrierDelivery {
     public static final MapCodec<TEBladeCrescentEdgeDelivery> CODEC = MapCodec.unit(TEBladeCrescentEdgeDelivery::new);
@@ -40,7 +40,7 @@ public class TEBladeCrescentEdgeDelivery extends AbstractCarrierDelivery {
         double distance = muzzle.distanceTo(aim.point()) + range * 2.0D;
         int lifetime = Mth.clamp((int) Math.ceil(distance / (double) SPEED) + 6, MIN_LIFETIME, MAX_LIFETIME);
         
-        TEBladeEntitySpellDrive drive = new TEBladeEntitySpellDrive(TEBladeThaumaturgeEntityTypes.SPELL_DRIVE.get(), level);
+        EntityThaumaturgeSpellDrive drive = new EntityThaumaturgeSpellDrive(TEBladeThaumaturgeEntityTypes.SPELL_DRIVE.get(), level);
         drive.setPos(muzzle);
         drive.setDamage(0.0D);
         drive.setOwner(caster);

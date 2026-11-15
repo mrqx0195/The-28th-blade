@@ -1,4 +1,4 @@
-package net.mrqx.slashblade.teblade.compat.thaumaturge.spell.entity;
+package net.mrqx.slashblade.teblade.compat.thaumaturge.entity;
 
 import mods.flammpfeil.slashblade.entity.EntityJudgementCut;
 import mods.flammpfeil.slashblade.entity.Projectile;
@@ -8,8 +8,8 @@ import net.minecraft.world.level.Level;
 
 import java.util.List;
 
-public class TEBladeEntitySpellJudgementCut extends EntityJudgementCut {
-    public TEBladeEntitySpellJudgementCut(EntityType<? extends Projectile> entityType, Level level) {
+public class EntityThaumaturgeSpellJudgementCut extends EntityJudgementCut {
+    public EntityThaumaturgeSpellJudgementCut(EntityType<? extends Projectile> entityType, Level level) {
         super(entityType, level);
     }
     

@@ -1,4 +1,4 @@
-package net.mrqx.slashblade.teblade.compat.thaumaturge.spell.entity;
+package net.mrqx.slashblade.teblade.compat.thaumaturge.entity;
 
 import com.leclowndu93150.thaumaturge.api.spell.cast.SpellTarget;
 import com.leclowndu93150.thaumaturge.content.spell.carrier.CarrierPayload;
@@ -14,15 +14,12 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.EntityHitResult;
+import net.mrqx.slashblade.teblade.compat.thaumaturge.utils.TEBladeCarrierSupport;
 
 import javax.annotation.Nullable;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Optional;
-import java.util.Set;
-import java.util.UUID;
+import java.util.*;
 
-public class TEBladeEntitySpellDrive extends EntityDrive {
+public class EntityThaumaturgeSpellDrive extends EntityDrive {
     private static final Codec<Set<UUID>> RESUMED_TARGETS_CODEC =
         UUIDUtil.CODEC.listOf().xmap(HashSet::new, List::copyOf);
     private final Set<UUID> resumedTargets = new HashSet<>();
@@ -30,7 +27,7 @@ public class TEBladeEntitySpellDrive extends EntityDrive {
     private CarrierPayload payload;
     private boolean blockResumed;
     
-    public TEBladeEntitySpellDrive(EntityType<? extends Projectile> entityType, Level level) {
+    public EntityThaumaturgeSpellDrive(EntityType<? extends Projectile> entityType, Level level) {
         super(entityType, level);
     }
     

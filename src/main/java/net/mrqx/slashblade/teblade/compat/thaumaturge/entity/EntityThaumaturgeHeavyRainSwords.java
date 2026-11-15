@@ -1,4 +1,4 @@
-package net.mrqx.slashblade.teblade.compat.thaumaturge.spell.entity;
+package net.mrqx.slashblade.teblade.compat.thaumaturge.entity;
 
 import mods.flammpfeil.slashblade.entity.EntityHeavyRainSwords;
 import mods.flammpfeil.slashblade.entity.Projectile;
@@ -11,12 +11,12 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.Vec3;
 import org.joml.Vector3f;
 
-public class TEBladeEntityHeavyRain extends EntityHeavyRainSwords {
-    private static final EntityDataAccessor<Boolean> ANCHORED = SynchedEntityData.defineId(TEBladeEntityHeavyRain.class,
+public class EntityThaumaturgeHeavyRainSwords extends EntityHeavyRainSwords {
+    private static final EntityDataAccessor<Boolean> ANCHORED = SynchedEntityData.defineId(EntityThaumaturgeHeavyRainSwords.class,
         EntityDataSerializers.BOOLEAN);
-    private static final EntityDataAccessor<Vector3f> ANCHOR = SynchedEntityData.defineId(TEBladeEntityHeavyRain.class,
+    private static final EntityDataAccessor<Vector3f> ANCHOR = SynchedEntityData.defineId(EntityThaumaturgeHeavyRainSwords.class,
         EntityDataSerializers.VECTOR3);
-    private static final EntityDataAccessor<Boolean> LAUNCHED = SynchedEntityData.defineId(TEBladeEntityHeavyRain.class,
+    private static final EntityDataAccessor<Boolean> LAUNCHED = SynchedEntityData.defineId(EntityThaumaturgeHeavyRainSwords.class,
         EntityDataSerializers.BOOLEAN);
     private static final String ANCHORED_TAG = "teblade_anchored";
     private static final String ANCHOR_X_TAG = "teblade_anchor_x";
@@ -27,7 +27,7 @@ public class TEBladeEntityHeavyRain extends EntityHeavyRainSwords {
     
     private long tebladeFireTime = -1L;
     
-    public TEBladeEntityHeavyRain(EntityType<? extends Projectile> type, Level level) {
+    public EntityThaumaturgeHeavyRainSwords(EntityType<? extends Projectile> type, Level level) {
         super(type, level);
     }
     

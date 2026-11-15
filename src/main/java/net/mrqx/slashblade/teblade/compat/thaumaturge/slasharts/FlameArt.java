@@ -10,8 +10,8 @@ import net.minecraft.world.phys.AABB;
 import net.minecraft.world.phys.Vec3;
 import net.mrqx.sbr_core.utils.SlashBladeMovementUtils;
 import net.mrqx.slashblade.teblade.compat.thaumaturge.registry.TEBladeThaumaturgeAttachmentTypes;
-import net.mrqx.slashblade.teblade.compat.thaumaturge.utils.CombatTargets;
 import net.mrqx.slashblade.teblade.data.TEBladeDamageTypesBootstrap;
+import net.mrqx.slashblade.teblade.utils.CombatTargets;
 import net.mrqx.truepower.util.TruePowerComboHelper;
 
 import java.util.Optional;
